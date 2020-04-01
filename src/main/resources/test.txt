@@ -1,0 +1,1055 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
+            xmlns:a="http://www.w3.org/2005/08/addressing">
+  <s:Header>
+    <a:Action s:mustUnderstand="1">http://tempuri.org/IFlightBookingService/SearchFlightResponse</a:Action>
+    <servertoken xmlns="http://schemas.microsoft.com/ws/2006/05/context">S54254136235</servertoken>
+    <Context xmlns="http://schemas.microsoft.com/ws/2006/05/context">
+      <Property name="instanceId">1d70fe72-b287-4206-9e9f-0b7322f97ec1</Property>
+    </Context>
+  </s:Header>
+  <s:Body>
+    <SearchFlightResponse xmlns="http://tempuri.org/">
+      <SearchFlightResult xmlns:b="http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL"
+                          xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <b:AvailableFlights>
+          <b:AirlineFlight>
+            <b:AFDirection>OutBound</b:AFDirection>
+            <b:AFIndex>0</b:AFIndex>
+            <b:AdditionalFareInfo i:nil="true"/>
+            <b:ArrCity>CNX</b:ArrCity>
+            <b:ArrCityName>Chiang Mai International Airport</b:ArrCityName>
+            <b:ArrDate>29 Apr 2020</b:ArrDate>
+            <b:ArrTime>09:20</b:ArrTime>
+            <b:ArrivalDate>2020-04-29T09:20:00</b:ArrivalDate>
+            <b:BusinessFlexiFlight i:nil="true"/>
+            <b:BusinessFlight i:nil="true"/>
+            <b:ConnectionCityDetails i:nil="true"/>
+            <b:CurrSymbol i:nil="true"/>
+            <b:Currency i:nil="true"/>
+            <b:CurrencyName i:nil="true"/>
+            <b:DayDuration>0</b:DayDuration>
+            <b:DepCity>BKK</b:DepCity>
+            <b:DepCityName>Suvarnabhumi Airport</b:DepCityName>
+            <b:DepDate>29 Apr 2020</b:DepDate>
+            <b:DepTime>08:00</b:DepTime>
+            <b:DepartureDate>2020-04-29T08:00:00</b:DepartureDate>
+            <b:DiffDepFlightSeperator>false</b:DiffDepFlightSeperator>
+            <b:DiffReturnFlightSeperator>false</b:DiffReturnFlightSeperator>
+            <b:DisplayCurrencyCode i:nil="true"/>
+            <b:EC>0</b:EC>
+            <b:EconomyFlexiFlight i:nil="true"/>
+            <b:EconomyFlight i:nil="true"/>
+            <b:FGKey>BO_1_FL_1_FG_1</b:FGKey>
+            <b:FareGroupFlights>
+              <b:FareGroupFlight>
+                <b:DispFareGroup>Web Promotion</b:DispFareGroup>
+                <b:DispMLFareGroup i:nil="true"/>
+                <b:FGFlight>
+                  <b:AFIndex>0</b:AFIndex>
+                  <b:ActualFareBasisCode i:nil="true"/>
+                  <b:AdditionalFareInfo i:nil="true"/>
+                  <b:Adult>1</b:Adult>
+                  <b:AppliedPromotionInfo i:nil="true"/>
+                  <b:B2BDAmount>0</b:B2BDAmount>
+                  <b:B2BDCode i:nil="true"/>
+                  <b:B2BIAmount>0</b:B2BIAmount>
+                  <b:B2BICode i:nil="true"/>
+                  <b:BookingCharges i:nil="true"/>
+                  <b:BookingError i:nil="true"/>
+                  <b:CantSelectFlight>false</b:CantSelectFlight>
+                  <b:Child>0</b:Child>
+                  <b:ClassCode>WP</b:ClassCode>
+                  <b:CurrencyCode>THB</b:CurrencyCode>
+                  <b:FGCode>WP</b:FGCode>
+                  <b:FGKey>BO_1_FL_1_FG_1</b:FGKey>
+                  <b:FareBasisCode>ASP00</b:FareBasisCode>
+                  <b:FareType>Nego/Net</b:FareType>
+                  <b:FlightClass>Web Promotion</b:FlightClass>
+                  <b:FlightDirection>OutBound</b:FlightDirection>
+                  <b:FreeBaggageAllowances i:nil="true"/>
+                  <b:GSTBreakDown i:nil="true"/>
+                  <b:IBNoStops>0</b:IBNoStops>
+                  <b:Infant>0</b:Infant>
+                  <b:InsuranceGST i:nil="true"/>
+                  <b:InsuranceInfo xmlns:c="http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL.Insurances"
+                                   i:nil="true"/>
+                  <b:IsChangeFlightBlock>false</b:IsChangeFlightBlock>
+                  <b:IsCorporateFare>false</b:IsCorporateFare>
+                  <b:IsFlightOnly>true</b:IsFlightOnly>
+                  <b:IsInsuranceAdded>false</b:IsInsuranceAdded>
+                  <b:IsMinFareFlight>false</b:IsMinFareFlight>
+                  <b:IsMultileg>false</b:IsMultileg>
+                  <b:IsNoShowFee>false</b:IsNoShowFee>
+                  <b:IsPromoFare>false</b:IsPromoFare>
+                  <b:IsPromotionApplied>false</b:IsPromotionApplied>
+                  <b:IsSelected>false</b:IsSelected>
+                  <b:IsShowFareRules>false</b:IsShowFareRules>
+                  <b:IsShowPromotionFare>false</b:IsShowPromotionFare>
+                  <b:IsShowPromotionInResults>false</b:IsShowPromotionInResults>
+                  <b:IsSoldOutFlight>false</b:IsSoldOutFlight>
+                  <b:IsStrikeoutApplied>false</b:IsStrikeoutApplied>
+                  <b:IsUncombinedFlight>false</b:IsUncombinedFlight>
+                  <b:IsValidPromoCode>false</b:IsValidPromoCode>
+                  <b:IsVisaDepFlightSelected>false</b:IsVisaDepFlightSelected>
+                  <b:IsVisaMintimeFlight>false</b:IsVisaMintimeFlight>
+                  <b:MK i:nil="true"/>
+                  <b:MarkupApplied xmlns:c="http://schemas.datacontract.org/2004/07/GoQuo.DP.Entities"/>
+                  <b:MergedPriceInfo i:nil="true"/>
+                  <b:MobAppLangText xmlns:c="http://schemas.datacontract.org/2004/07/GoQuo.DP.Entities"
+                                    i:nil="true"/>
+                  <b:MobTermsandCondText i:nil="true"/>
+                  <b:MobileInsuranceText xmlns:c="http://schemas.datacontract.org/2004/07/GoQuo.DP.Entities"
+                                         i:nil="true"/>
+                  <b:NetAmount>0</b:NetAmount>
+                  <b:OBNoStops>0</b:OBNoStops>
+                  <b:ParentGroup i:nil="true"/>
+                  <b:PromotionStatus>0</b:PromotionStatus>
+                  <b:PunitID>0</b:PunitID>
+                  <b:ResultMsg xmlns:c="http://schemas.datacontract.org/2004/07/GoQuo.DP.Entities"
+                               i:nil="true"/>
+                  <b:SegLen>0</b:SegLen>
+                  <b:SegmentedFareBreakDown xmlns:c="http://schemas.datacontract.org/2004/07/GoQuo.DP.Entities">
+                    <c:SegmentFareInfoEN>
+                      <c:ArrCode>CNX</c:ArrCode>
+                      <c:CurrencyCode>THB</c:CurrencyCode>
+                      <c:DepCode>BKK</c:DepCode>
+                      <c:FareAmount>1090</c:FareAmount>
+                      <c:FareBasisCode>ASP00</c:FareBasisCode>
+                      <c:PaxType>ADT</c:PaxType>
+                      <c:ResultMsg i:nil="true"/>
+                      <c:SegmentIndex>0</c:SegmentIndex>
+                    </c:SegmentFareInfoEN>
+                    <c:SegmentFareInfoEN>
+                      <c:ArrCode>CNX</c:ArrCode>
+                      <c:CurrencyCode>THB</c:CurrencyCode>
+                      <c:DepCode>BKK</c:DepCode>
+                      <c:FareAmount>0</c:FareAmount>
+                      <c:FareBasisCode/>
+                      <c:PaxType>CNN</c:PaxType>
+                      <c:ResultMsg i:nil="true"/>
+                      <c:SegmentIndex>0</c:SegmentIndex>
+                    </c:SegmentFareInfoEN>
+                    <c:SegmentFareInfoEN>
+                      <c:ArrCode>CNX</c:ArrCode>
+                      <c:CurrencyCode>THB</c:CurrencyCode>
+                      <c:DepCode>BKK</c:DepCode>
+                      <c:FareAmount>0</c:FareAmount>
+                      <c:FareBasisCode/>
+                      <c:PaxType>INF</c:PaxType>
+                      <c:ResultMsg i:nil="true"/>
+                      <c:SegmentIndex>0</c:SegmentIndex>
+                    </c:SegmentFareInfoEN>
+                  </b:SegmentedFareBreakDown>
+                  <b:SpecialTypePax i:nil="true"/>
+                  <b:StrikeoutInfo i:nil="true"/>
+                  <b:TaxBreakDown>
+                    <b:TaxBreakDownInfo>
+                      <b:Amount>100.00</b:Amount>
+                      <b:BreakDownCode>TS</b:BreakDownCode>
+                      <b:CurrencyCode>THB</b:CurrencyCode>
+                      <b:Description/>
+                      <b:DisplayAmount>100</b:DisplayAmount>
+                      <b:DisplayCurrency>THB</b:DisplayCurrency>
+                      <b:DisplayDesc i:nil="true"/>
+                    </b:TaxBreakDownInfo>
+                  </b:TaxBreakDown>
+                  <b:UnCombineFares i:nil="true"/>
+                  <b:UpdatedPriceInfo i:nil="true"/>
+                  <b:UpdatedTaxMarkup>0</b:UpdatedTaxMarkup>
+                  <b:VATTax>0</b:VATTax>
+                  <b:WHTax>0</b:WHTax>
+                  <b:dispCurrencyCode>THB</b:dispCurrencyCode>
+                  <b:inBoundFlights i:nil="true"/>
+                  <b:outBoundFlights>
+                    <b:FlightSegment>
+                      <b:DefaultSelected>checked='checked'</b:DefaultSelected>
+                      <b:Index>0@0</b:Index>
+                      <b:IsSelected>false</b:IsSelected>
+                      <b:Segments>
+                        <b:GDS_FlightSegment>
+                          <b:ActualCabinClass>Web Promotion</b:ActualCabinClass>
+                          <b:ActualCabinClassCode>WP</b:ActualCabinClassCode>
+                          <b:AdultFreeBaggageForDisplay i:nil="true"/>
+                          <b:AirCraft>320</b:AirCraft>
+                          <b:ArrAirName>Chiang Mai International Airport</b:ArrAirName>
+                          <b:ArrAirPort>CNX</b:ArrAirPort>
+                          <b:ArrAirPortCountry>Thailand</b:ArrAirPortCountry>
+                          <b:ArrCityName>Chiang Mai</b:ArrCityName>
+                          <b:ArrDate>29 Apr 2020</b:ArrDate>
+                          <b:ArrDateTime>2020-04-29T09:20:00</b:ArrDateTime>
+                          <b:ArrTime>09:20</b:ArrTime>
+                          <b:ArrivalTerminalInfo i:nil="true"/>
+                          <b:AvailSeats/>
+                          <b:BookingClass>A</b:BookingClass>
+                          <b:CMFareBasis/>
+                          <b:CabinClass>Web Promotion</b:CabinClass>
+                          <b:CabinClassCode i:nil="true"/>
+                          <b:ChildFreeBaggageForDisplay i:nil="true"/>
+                          <b:ClassCode>E</b:ClassCode>
+                          <b:DepAirName>Suvarnabhumi Airport</b:DepAirName>
+                          <b:DepAirPort>BKK</b:DepAirPort>
+                          <b:DepAirPortCountry>Thailand</b:DepAirPortCountry>
+                          <b:DepCityName>Bangkok</b:DepCityName>
+                          <b:DepDate>29 Apr 2020</b:DepDate>
+                          <b:DepDateTime>2020-04-29T08:00:00</b:DepDateTime>
+                          <b:DepTime>08:00</b:DepTime>
+                          <b:DepartureTerminalInfo i:nil="true"/>
+                          <b:DisClosureAirline i:nil="true"/>
+                          <b:DispArrDate i:nil="true"/>
+                          <b:DispCabinClass>Web Promotion</b:DispCabinClass>
+                          <b:DispDepDate i:nil="true"/>
+                          <b:DispFBCode>ASP00</b:DispFBCode>
+                          <b:DispSegFBCode>ASP00</b:DispSegFBCode>
+                          <b:FBCode>ASP00</b:FBCode>
+                          <b:FlightNo>215</b:FlightNo>
+                          <b:FlightSegmentRef>SEG_BKKCNX_1</b:FlightSegmentRef>
+                          <b:FreeBaggageForDisplay i:nil="true"/>
+                          <b:InfantFreeBaggageForDisplay i:nil="true"/>
+                          <b:IntermediatePoints i:nil="true"/>
+                          <b:IsFirstSegment>false</b:IsFirstSegment>
+                          <b:JDuration/>
+                          <b:JDurationHRS i:nil="true"/>
+                          <b:JDurationMin i:nil="true"/>
+                          <b:JDurationText i:nil="true"/>
+                          <b:LegIndex>0</b:LegIndex>
+                          <b:MLFGCode i:nil="true"/>
+                          <b:MarAirLine>PG</b:MarAirLine>
+                          <b:MarAirLineName>Bangkok Airways</b:MarAirLineName>
+                          <b:OprAirline>PG</b:OprAirline>
+                          <b:OprAirlineName>Bangkok Airways</b:OprAirlineName>
+                          <b:OtherPaxFreeBaggageForDisplay i:nil="true"/>
+                          <b:ParentCabinClassCode i:nil="true"/>
+                          <b:ProviderID i:nil="true"/>
+                          <b:SegFBCode>ASP00</b:SegFBCode>
+                          <b:SegmentIndex>1</b:SegmentIndex>
+                          <b:Stops>0</b:Stops>
+                          <b:TDuraMins>80</b:TDuraMins>
+                          <b:TDuration>01h 20m</b:TDuration>
+                          <b:TransTime i:nil="true"/>
+                          <b:TransTimeMins>0</b:TransTimeMins>
+                          <b:TravelTime>0</b:TravelTime>
+                          <b:Via i:nil="true"/>
+                          <b:isDisplayDuration>false</b:isDisplayDuration>
+                        </b:GDS_FlightSegment>
+                      </b:Segments>
+                      <b:Selected>false</b:Selected>
+                      <b:TotalDurInMin>80</b:TotalDurInMin>
+                      <b:TotalDuration>1 h 20 m</b:TotalDuration>
+                    </b:FlightSegment>
+                  </b:outBoundFlights>
+                  <b:priceInfo>
+                    <b:AdultMiles>0</b:AdultMiles>
+                    <b:AdultPerCash>0</b:AdultPerCash>
+                    <b:AdultPrice>
+                      <b:GstTaxPerPax>0</b:GstTaxPerPax>
+                      <b:PerPaxTaxBreakDown>
+                        <b:TaxBreakDownInfo>
+                          <b:Amount>100</b:Amount>
+                          <b:BreakDownCode>TS</b:BreakDownCode>
+                          <b:CurrencyCode>THB</b:CurrencyCode>
+                          <b:Description/>
+                          <b:DisplayAmount/>
+                          <b:DisplayCurrency>THB</b:DisplayCurrency>
+                          <b:DisplayDesc i:nil="true"/>
+                        </b:TaxBreakDownInfo>
+                      </b:PerPaxTaxBreakDown>
+                      <b:PricePerPax>1090</b:PricePerPax>
+                      <b:PromotionPerPax>0</b:PromotionPerPax>
+                      <b:SpecialFareType i:nil="true"/>
+                      <b:SpecialTypePaxCount>0</b:SpecialTypePaxCount>
+                      <b:TaxPerPax>100</b:TaxPerPax>
+                      <b:dispGstTaxPerPax>0</b:dispGstTaxPerPax>
+                      <b:dispMLTotalPricePerPax i:nil="true"/>
+                      <b:dispPricePerPax>1,090</b:dispPricePerPax>
+                      <b:dispPromotionPerPax/>
+                      <b:dispTaxPerPax>100</b:dispTaxPerPax>
+                      <b:dispTotalPricePerPax>1,190</b:dispTotalPricePerPax>
+                    </b:AdultPrice>
+                    <b:BaseFareDiff>0</b:BaseFareDiff>
+                    <b:BaseFarePrice>1090</b:BaseFarePrice>
+                    <b:BaseFareRoundingText/>
+                    <b:CCardCommision>0</b:CCardCommision>
+                    <b:CRatio>1</b:CRatio>
+                    <b:ChildMiles>0</b:ChildMiles>
+                    <b:ChildPrice i:nil="true"/>
+                    <b:DiffredTaxOnDiscount>0</b:DiffredTaxOnDiscount>
+                    <b:DispInsuranceAmt i:nil="true"/>
+                    <b:DispTotalWithInsurance i:nil="true"/>
+                    <b:FPromoAmount>0</b:FPromoAmount>
+                    <b:GSTTTotalTax>0</b:GSTTTotalTax>
+                    <b:GSTTax>0</b:GSTTax>
+                    <b:InfantMiles>0</b:InfantMiles>
+                    <b:InfantPrice i:nil="true"/>
+                    <b:InsuranceAmt>0</b:InsuranceAmt>
+                    <b:InsuranceName i:nil="true"/>
+                    <b:IsActualFareUpdated>false</b:IsActualFareUpdated>
+                    <b:IsCashPlusMiles>false</b:IsCashPlusMiles>
+                    <b:IsMilesFare>false</b:IsMilesFare>
+                    <b:IsShowUpdatePrice>false</b:IsShowUpdatePrice>
+                    <b:LoyaltyPrice xmlns:c="http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL.Loyalty"
+                                    i:nil="true"/>
+                    <b:MilesBaseFare>0</b:MilesBaseFare>
+                    <b:MilesToUse>0</b:MilesToUse>
+                    <b:PerSegPaxPriceDiff i:nil="true"/>
+                    <b:PkgAmountWithPromotion>0</b:PkgAmountWithPromotion>
+                    <b:PkgAmt>1090</b:PkgAmt>
+                    <b:PkgDispAmt>1,090</b:PkgDispAmt>
+                    <b:PkgMilesAmt>0</b:PkgMilesAmt>
+                    <b:PriceDiff>0</b:PriceDiff>
+                    <b:PromotionTotalAmount>0</b:PromotionTotalAmount>
+                    <b:SpecialPrice i:nil="true"/>
+                    <b:StrikeoutFarePrice>0</b:StrikeoutFarePrice>
+                    <b:StrikeoutTotalPrice>0</b:StrikeoutTotalPrice>
+                    <b:TotalAdultMiles>0</b:TotalAdultMiles>
+                    <b:TotalChildMiles>0</b:TotalChildMiles>
+                    <b:TotalFareRound>0</b:TotalFareRound>
+                    <b:TotalInfantMiles>0</b:TotalInfantMiles>
+                    <b:TotalMarkup>0</b:TotalMarkup>
+                    <b:TotalMiles>0</b:TotalMiles>
+                    <b:TotalPrice>1190</b:TotalPrice>
+                    <b:TotalTax>100</b:TotalTax>
+                    <b:TotalTaxwithoutGST>0</b:TotalTaxwithoutGST>
+                    <b:Totalb2bMarkup>0</b:Totalb2bMarkup>
+                    <b:VoucherAmount>0.00</b:VoucherAmount>
+                    <b:dispBaseFareDiff i:nil="true"/>
+                    <b:dispBaseFarePrice i:nil="true"/>
+                    <b:dispGSTTax i:nil="true"/>
+                    <b:dispGSTTotalTax i:nil="true"/>
+                    <b:dispPkgAmountWithPromotion/>
+                    <b:dispPriceDiff i:nil="true"/>
+                    <b:dispPriceText>Avg Price Per Person</b:dispPriceText>
+                    <b:dispPromotionTotalAmount/>
+                    <b:dispStrikeoutFarePrice i:nil="true"/>
+                    <b:dispStrikeoutTotalPrice i:nil="true"/>
+                    <b:dispTotalPrice>1,090</b:dispTotalPrice>
+                    <b:dispTotalTax>100</b:dispTotalTax>
+                    <b:dispTotalTaxwithoutGST i:nil="true"/>
+                  </b:priceInfo>
+                </b:FGFlight>
+                <b:FGIndex>1</b:FGIndex>
+                <b:FareGroup>Web Promotion</b:FareGroup>
+                <b:FareGroupCode>WP</b:FareGroupCode>
+                <b:ParentGroupName i:nil="true"/>
+              </b:FareGroupFlight>
+              <b:FareGroupFlight>
+                <b:DispFareGroup>Web Saver</b:DispFareGroup>
+                <b:DispMLFareGroup i:nil="true"/>
+                <b:FGFlight>
+                  <b:AFIndex>0</b:AFIndex>
+                  <b:ActualFareBasisCode i:nil="true"/>
+                  <b:AdditionalFareInfo i:nil="true"/>
+                  <b:Adult>1</b:Adult>
+                  <b:AppliedPromotionInfo i:nil="true"/>
+                  <b:B2BDAmount>0</b:B2BDAmount>
+                  <b:B2BDCode i:nil="true"/>
+                  <b:B2BIAmount>0</b:B2BIAmount>
+                  <b:B2BICode i:nil="true"/>
+                  <b:BookingCharges i:nil="true"/>
+                  <b:BookingError i:nil="true"/>
+                  <b:CantSelectFlight>false</b:CantSelectFlight>
+                  <b:Child>0</b:Child>
+                  <b:ClassCode>WS</b:ClassCode>
+                  <b:CurrencyCode>THB</b:CurrencyCode>
+                  <b:FGCode>WS</b:FGCode>
+                  <b:FGKey>BO_1_FL_1_FG_2</b:FGKey>
+                  <b:FareBasisCode>NWW</b:FareBasisCode>
+                  <b:FareType>Nego/Net</b:FareType>
+                  <b:FlightClass>Web Saver</b:FlightClass>
+                  <b:FlightDirection>OutBound</b:FlightDirection>
+                  <b:FreeBaggageAllowances i:nil="true"/>
+                  <b:GSTBreakDown i:nil="true"/>
+                  <b:IBNoStops>0</b:IBNoStops>
+                  <b:Infant>0</b:Infant>
+                  <b:InsuranceGST i:nil="true"/>
+                  <b:InsuranceInfo xmlns:c="http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL.Insurances"
+                                   i:nil="true"/>
+                  <b:IsChangeFlightBlock>false</b:IsChangeFlightBlock>
+                  <b:IsCorporateFare>false</b:IsCorporateFare>
+                  <b:IsFlightOnly>true</b:IsFlightOnly>
+                  <b:IsInsuranceAdded>false</b:IsInsuranceAdded>
+                  <b:IsMinFareFlight>false</b:IsMinFareFlight>
+                  <b:IsMultileg>false</b:IsMultileg>
+                  <b:IsNoShowFee>false</b:IsNoShowFee>
+                  <b:IsPromoFare>false</b:IsPromoFare>
+                  <b:IsPromotionApplied>false</b:IsPromotionApplied>
+                  <b:IsSelected>false</b:IsSelected>
+                  <b:IsShowFareRules>false</b:IsShowFareRules>
+                  <b:IsShowPromotionFare>false</b:IsShowPromotionFare>
+                  <b:IsShowPromotionInResults>false</b:IsShowPromotionInResults>
+                  <b:IsSoldOutFlight>false</b:IsSoldOutFlight>
+                  <b:IsStrikeoutApplied>false</b:IsStrikeoutApplied>
+                  <b:IsUncombinedFlight>false</b:IsUncombinedFlight>
+                  <b:IsValidPromoCode>false</b:IsValidPromoCode>
+                  <b:IsVisaDepFlightSelected>false</b:IsVisaDepFlightSelected>
+                  <b:IsVisaMintimeFlight>false</b:IsVisaMintimeFlight>
+                  <b:MK i:nil="true"/>
+                  <b:MarkupApplied xmlns:c="http://schemas.datacontract.org/2004/07/GoQuo.DP.Entities"/>
+                  <b:MergedPriceInfo i:nil="true"/>
+                  <b:MobAppLangText xmlns:c="http://schemas.datacontract.org/2004/07/GoQuo.DP.Entities"
+                                    i:nil="true"/>
+                  <b:MobTermsandCondText i:nil="true"/>
+                  <b:MobileInsuranceText xmlns:c="http://schemas.datacontract.org/2004/07/GoQuo.DP.Entities"
+                                         i:nil="true"/>
+                  <b:NetAmount>0</b:NetAmount>
+                  <b:OBNoStops>0</b:OBNoStops>
+                  <b:ParentGroup i:nil="true"/>
+                  <b:PromotionStatus>0</b:PromotionStatus>
+                  <b:PunitID>8</b:PunitID>
+                  <b:ResultMsg xmlns:c="http://schemas.datacontract.org/2004/07/GoQuo.DP.Entities"
+                               i:nil="true"/>
+                  <b:SegLen>0</b:SegLen>
+                  <b:SegmentedFareBreakDown xmlns:c="http://schemas.datacontract.org/2004/07/GoQuo.DP.Entities">
+                    <c:SegmentFareInfoEN>
+                      <c:ArrCode>CNX</c:ArrCode>
+                      <c:CurrencyCode>THB</c:CurrencyCode>
+                      <c:DepCode>BKK</c:DepCode>
+                      <c:FareAmount>3590</c:FareAmount>
+                      <c:FareBasisCode>NWW</c:FareBasisCode>
+                      <c:PaxType>ADT</c:PaxType>
+                      <c:ResultMsg i:nil="true"/>
+                      <c:SegmentIndex>0</c:SegmentIndex>
+                    </c:SegmentFareInfoEN>
+                    <c:SegmentFareInfoEN>
+                      <c:ArrCode>CNX</c:ArrCode>
+                      <c:CurrencyCode>THB</c:CurrencyCode>
+                      <c:DepCode>BKK</c:DepCode>
+                      <c:FareAmount>0</c:FareAmount>
+                      <c:FareBasisCode/>
+                      <c:PaxType>CNN</c:PaxType>
+                      <c:ResultMsg i:nil="true"/>
+                      <c:SegmentIndex>0</c:SegmentIndex>
+                    </c:SegmentFareInfoEN>
+                    <c:SegmentFareInfoEN>
+                      <c:ArrCode>CNX</c:ArrCode>
+                      <c:CurrencyCode>THB</c:CurrencyCode>
+                      <c:DepCode>BKK</c:DepCode>
+                      <c:FareAmount>0</c:FareAmount>
+                      <c:FareBasisCode/>
+                      <c:PaxType>INF</c:PaxType>
+                      <c:ResultMsg i:nil="true"/>
+                      <c:SegmentIndex>0</c:SegmentIndex>
+                    </c:SegmentFareInfoEN>
+                  </b:SegmentedFareBreakDown>
+                  <b:SpecialTypePax i:nil="true"/>
+                  <b:StrikeoutInfo i:nil="true"/>
+                  <b:TaxBreakDown>
+                    <b:TaxBreakDownInfo>
+                      <b:Amount>100.00</b:Amount>
+                      <b:BreakDownCode>TS</b:BreakDownCode>
+                      <b:CurrencyCode>THB</b:CurrencyCode>
+                      <b:Description/>
+                      <b:DisplayAmount>100</b:DisplayAmount>
+                      <b:DisplayCurrency>THB</b:DisplayCurrency>
+                      <b:DisplayDesc i:nil="true"/>
+                    </b:TaxBreakDownInfo>
+                  </b:TaxBreakDown>
+                  <b:UnCombineFares i:nil="true"/>
+                  <b:UpdatedPriceInfo i:nil="true"/>
+                  <b:UpdatedTaxMarkup>0</b:UpdatedTaxMarkup>
+                  <b:VATTax>0</b:VATTax>
+                  <b:WHTax>0</b:WHTax>
+                  <b:dispCurrencyCode>THB</b:dispCurrencyCode>
+                  <b:inBoundFlights i:nil="true"/>
+                  <b:outBoundFlights>
+                    <b:FlightSegment>
+                      <b:DefaultSelected>checked='checked'</b:DefaultSelected>
+                      <b:Index>8@0</b:Index>
+                      <b:IsSelected>false</b:IsSelected>
+                      <b:Segments>
+                        <b:GDS_FlightSegment>
+                          <b:ActualCabinClass>Web Saver</b:ActualCabinClass>
+                          <b:ActualCabinClassCode>WS</b:ActualCabinClassCode>
+                          <b:AdultFreeBaggageForDisplay i:nil="true"/>
+                          <b:AirCraft>320</b:AirCraft>
+                          <b:ArrAirName>Chiang Mai International Airport</b:ArrAirName>
+                          <b:ArrAirPort>CNX</b:ArrAirPort>
+                          <b:ArrAirPortCountry>Thailand</b:ArrAirPortCountry>
+                          <b:ArrCityName>Chiang Mai</b:ArrCityName>
+                          <b:ArrDate>29 Apr 2020</b:ArrDate>
+                          <b:ArrDateTime>2020-04-29T09:20:00</b:ArrDateTime>
+                          <b:ArrTime>09:20</b:ArrTime>
+                          <b:ArrivalTerminalInfo i:nil="true"/>
+                          <b:AvailSeats/>
+                          <b:BookingClass>N</b:BookingClass>
+                          <b:CMFareBasis/>
+                          <b:CabinClass>Web Saver</b:CabinClass>
+                          <b:CabinClassCode>WS</b:CabinClassCode>
+                          <b:ChildFreeBaggageForDisplay i:nil="true"/>
+                          <b:ClassCode>E</b:ClassCode>
+                          <b:DepAirName>Suvarnabhumi Airport</b:DepAirName>
+                          <b:DepAirPort>BKK</b:DepAirPort>
+                          <b:DepAirPortCountry>Thailand</b:DepAirPortCountry>
+                          <b:DepCityName>Bangkok</b:DepCityName>
+                          <b:DepDate>29 Apr 2020</b:DepDate>
+                          <b:DepDateTime>2020-04-29T08:00:00</b:DepDateTime>
+                          <b:DepTime>08:00</b:DepTime>
+                          <b:DepartureTerminalInfo i:nil="true"/>
+                          <b:DisClosureAirline i:nil="true"/>
+                          <b:DispArrDate i:nil="true"/>
+                          <b:DispCabinClass>Web Saver</b:DispCabinClass>
+                          <b:DispDepDate i:nil="true"/>
+                          <b:DispFBCode>NWW</b:DispFBCode>
+                          <b:DispSegFBCode>NWW</b:DispSegFBCode>
+                          <b:FBCode>NWW</b:FBCode>
+                          <b:FlightNo>215</b:FlightNo>
+                          <b:FlightSegmentRef>SEG_BKKCNX_1</b:FlightSegmentRef>
+                          <b:FreeBaggageForDisplay i:nil="true"/>
+                          <b:InfantFreeBaggageForDisplay i:nil="true"/>
+                          <b:IntermediatePoints i:nil="true"/>
+                          <b:IsFirstSegment>false</b:IsFirstSegment>
+                          <b:JDuration/>
+                          <b:JDurationHRS i:nil="true"/>
+                          <b:JDurationMin i:nil="true"/>
+                          <b:JDurationText i:nil="true"/>
+                          <b:LegIndex>0</b:LegIndex>
+                          <b:MLFGCode>WS</b:MLFGCode>
+                          <b:MarAirLine>PG</b:MarAirLine>
+                          <b:MarAirLineName>Bangkok Airways</b:MarAirLineName>
+                          <b:OprAirline>PG</b:OprAirline>
+                          <b:OprAirlineName>Bangkok Airways</b:OprAirlineName>
+                          <b:OtherPaxFreeBaggageForDisplay i:nil="true"/>
+                          <b:ParentCabinClassCode i:nil="true"/>
+                          <b:ProviderID i:nil="true"/>
+                          <b:SegFBCode>NWW</b:SegFBCode>
+                          <b:SegmentIndex>1</b:SegmentIndex>
+                          <b:Stops>0</b:Stops>
+                          <b:TDuraMins>80</b:TDuraMins>
+                          <b:TDuration>01h 20m</b:TDuration>
+                          <b:TransTime i:nil="true"/>
+                          <b:TransTimeMins>0</b:TransTimeMins>
+                          <b:TravelTime>0</b:TravelTime>
+                          <b:Via i:nil="true"/>
+                          <b:isDisplayDuration>false</b:isDisplayDuration>
+                        </b:GDS_FlightSegment>
+                      </b:Segments>
+                      <b:Selected>false</b:Selected>
+                      <b:TotalDurInMin>80</b:TotalDurInMin>
+                      <b:TotalDuration>1 h 20 m</b:TotalDuration>
+                    </b:FlightSegment>
+                  </b:outBoundFlights>
+                  <b:priceInfo>
+                    <b:AdultMiles>0</b:AdultMiles>
+                    <b:AdultPerCash>0</b:AdultPerCash>
+                    <b:AdultPrice>
+                      <b:GstTaxPerPax>0</b:GstTaxPerPax>
+                      <b:PerPaxTaxBreakDown>
+                        <b:TaxBreakDownInfo>
+                          <b:Amount>100</b:Amount>
+                          <b:BreakDownCode>TS</b:BreakDownCode>
+                          <b:CurrencyCode>THB</b:CurrencyCode>
+                          <b:Description/>
+                          <b:DisplayAmount/>
+                          <b:DisplayCurrency>THB</b:DisplayCurrency>
+                          <b:DisplayDesc i:nil="true"/>
+                        </b:TaxBreakDownInfo>
+                      </b:PerPaxTaxBreakDown>
+                      <b:PricePerPax>3590</b:PricePerPax>
+                      <b:PromotionPerPax>0</b:PromotionPerPax>
+                      <b:SpecialFareType i:nil="true"/>
+                      <b:SpecialTypePaxCount>0</b:SpecialTypePaxCount>
+                      <b:TaxPerPax>100</b:TaxPerPax>
+                      <b:dispGstTaxPerPax>0</b:dispGstTaxPerPax>
+                      <b:dispMLTotalPricePerPax i:nil="true"/>
+                      <b:dispPricePerPax>3,590</b:dispPricePerPax>
+                      <b:dispPromotionPerPax/>
+                      <b:dispTaxPerPax>100</b:dispTaxPerPax>
+                      <b:dispTotalPricePerPax>3,690</b:dispTotalPricePerPax>
+                    </b:AdultPrice>
+                    <b:BaseFareDiff>0</b:BaseFareDiff>
+                    <b:BaseFarePrice>3590</b:BaseFarePrice>
+                    <b:BaseFareRoundingText/>
+                    <b:CCardCommision>0</b:CCardCommision>
+                    <b:CRatio>1</b:CRatio>
+                    <b:ChildMiles>0</b:ChildMiles>
+                    <b:ChildPrice i:nil="true"/>
+                    <b:DiffredTaxOnDiscount>0</b:DiffredTaxOnDiscount>
+                    <b:DispInsuranceAmt i:nil="true"/>
+                    <b:DispTotalWithInsurance i:nil="true"/>
+                    <b:FPromoAmount>0</b:FPromoAmount>
+                    <b:GSTTTotalTax>0</b:GSTTTotalTax>
+                    <b:GSTTax>0</b:GSTTax>
+                    <b:InfantMiles>0</b:InfantMiles>
+                    <b:InfantPrice i:nil="true"/>
+                    <b:InsuranceAmt>0</b:InsuranceAmt>
+                    <b:InsuranceName i:nil="true"/>
+                    <b:IsActualFareUpdated>false</b:IsActualFareUpdated>
+                    <b:IsCashPlusMiles>false</b:IsCashPlusMiles>
+                    <b:IsMilesFare>false</b:IsMilesFare>
+                    <b:IsShowUpdatePrice>false</b:IsShowUpdatePrice>
+                    <b:LoyaltyPrice xmlns:c="http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL.Loyalty"
+                                    i:nil="true"/>
+                    <b:MilesBaseFare>0</b:MilesBaseFare>
+                    <b:MilesToUse>0</b:MilesToUse>
+                    <b:PerSegPaxPriceDiff i:nil="true"/>
+                    <b:PkgAmountWithPromotion>0</b:PkgAmountWithPromotion>
+                    <b:PkgAmt>3590</b:PkgAmt>
+                    <b:PkgDispAmt>3,590</b:PkgDispAmt>
+                    <b:PkgMilesAmt>0</b:PkgMilesAmt>
+                    <b:PriceDiff>0</b:PriceDiff>
+                    <b:PromotionTotalAmount>0</b:PromotionTotalAmount>
+                    <b:SpecialPrice i:nil="true"/>
+                    <b:StrikeoutFarePrice>0</b:StrikeoutFarePrice>
+                    <b:StrikeoutTotalPrice>0</b:StrikeoutTotalPrice>
+                    <b:TotalAdultMiles>0</b:TotalAdultMiles>
+                    <b:TotalChildMiles>0</b:TotalChildMiles>
+                    <b:TotalFareRound>0</b:TotalFareRound>
+                    <b:TotalInfantMiles>0</b:TotalInfantMiles>
+                    <b:TotalMarkup>0</b:TotalMarkup>
+                    <b:TotalMiles>0</b:TotalMiles>
+                    <b:TotalPrice>3690</b:TotalPrice>
+                    <b:TotalTax>100</b:TotalTax>
+                    <b:TotalTaxwithoutGST>0</b:TotalTaxwithoutGST>
+                    <b:Totalb2bMarkup>0</b:Totalb2bMarkup>
+                    <b:VoucherAmount>0.00</b:VoucherAmount>
+                    <b:dispBaseFareDiff i:nil="true"/>
+                    <b:dispBaseFarePrice i:nil="true"/>
+                    <b:dispGSTTax i:nil="true"/>
+                    <b:dispGSTTotalTax i:nil="true"/>
+                    <b:dispPkgAmountWithPromotion/>
+                    <b:dispPriceDiff i:nil="true"/>
+                    <b:dispPriceText>Avg Price Per Person</b:dispPriceText>
+                    <b:dispPromotionTotalAmount/>
+                    <b:dispStrikeoutFarePrice i:nil="true"/>
+                    <b:dispStrikeoutTotalPrice i:nil="true"/>
+                    <b:dispTotalPrice>3,590</b:dispTotalPrice>
+                    <b:dispTotalTax>100</b:dispTotalTax>
+                    <b:dispTotalTaxwithoutGST i:nil="true"/>
+                  </b:priceInfo>
+                </b:FGFlight>
+                <b:FGIndex>2</b:FGIndex>
+                <b:FareGroup>Web Saver</b:FareGroup>
+                <b:FareGroupCode>WS</b:FareGroupCode>
+                <b:ParentGroupName i:nil="true"/>
+              </b:FareGroupFlight>
+              <b:FareGroupFlight>
+                <b:DispFareGroup>Web Freedom</b:DispFareGroup>
+                <b:DispMLFareGroup i:nil="true"/>
+                <b:FGFlight>
+                  <b:AFIndex>0</b:AFIndex>
+                  <b:ActualFareBasisCode i:nil="true"/>
+                  <b:AdditionalFareInfo i:nil="true"/>
+                  <b:Adult>1</b:Adult>
+                  <b:AppliedPromotionInfo i:nil="true"/>
+                  <b:B2BDAmount>0</b:B2BDAmount>
+                  <b:B2BDCode i:nil="true"/>
+                  <b:B2BIAmount>0</b:B2BIAmount>
+                  <b:B2BICode i:nil="true"/>
+                  <b:BookingCharges i:nil="true"/>
+                  <b:BookingError i:nil="true"/>
+                  <b:CantSelectFlight>false</b:CantSelectFlight>
+                  <b:Child>0</b:Child>
+                  <b:ClassCode>WFR</b:ClassCode>
+                  <b:CurrencyCode>THB</b:CurrencyCode>
+                  <b:FGCode>WFR</b:FGCode>
+                  <b:FGKey>BO_1_FL_1_FG_3</b:FGKey>
+                  <b:FareBasisCode>Y</b:FareBasisCode>
+                  <b:FareType>Nego/Net</b:FareType>
+                  <b:FlightClass>Web Freedom</b:FlightClass>
+                  <b:FlightDirection>OutBound</b:FlightDirection>
+                  <b:FreeBaggageAllowances i:nil="true"/>
+                  <b:GSTBreakDown i:nil="true"/>
+                  <b:IBNoStops>0</b:IBNoStops>
+                  <b:Infant>0</b:Infant>
+                  <b:InsuranceGST i:nil="true"/>
+                  <b:InsuranceInfo xmlns:c="http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL.Insurances"
+                                   i:nil="true"/>
+                  <b:IsChangeFlightBlock>false</b:IsChangeFlightBlock>
+                  <b:IsCorporateFare>false</b:IsCorporateFare>
+                  <b:IsFlightOnly>true</b:IsFlightOnly>
+                  <b:IsInsuranceAdded>false</b:IsInsuranceAdded>
+                  <b:IsMinFareFlight>false</b:IsMinFareFlight>
+                  <b:IsMultileg>false</b:IsMultileg>
+                  <b:IsNoShowFee>false</b:IsNoShowFee>
+                  <b:IsPromoFare>false</b:IsPromoFare>
+                  <b:IsPromotionApplied>false</b:IsPromotionApplied>
+                  <b:IsSelected>false</b:IsSelected>
+                  <b:IsShowFareRules>false</b:IsShowFareRules>
+                  <b:IsShowPromotionFare>false</b:IsShowPromotionFare>
+                  <b:IsShowPromotionInResults>false</b:IsShowPromotionInResults>
+                  <b:IsSoldOutFlight>false</b:IsSoldOutFlight>
+                  <b:IsStrikeoutApplied>false</b:IsStrikeoutApplied>
+                  <b:IsUncombinedFlight>false</b:IsUncombinedFlight>
+                  <b:IsValidPromoCode>false</b:IsValidPromoCode>
+                  <b:IsVisaDepFlightSelected>false</b:IsVisaDepFlightSelected>
+                  <b:IsVisaMintimeFlight>false</b:IsVisaMintimeFlight>
+                  <b:MK i:nil="true"/>
+                  <b:MarkupApplied xmlns:c="http://schemas.datacontract.org/2004/07/GoQuo.DP.Entities"/>
+                  <b:MergedPriceInfo i:nil="true"/>
+                  <b:MobAppLangText xmlns:c="http://schemas.datacontract.org/2004/07/GoQuo.DP.Entities"
+                                    i:nil="true"/>
+                  <b:MobTermsandCondText i:nil="true"/>
+                  <b:MobileInsuranceText xmlns:c="http://schemas.datacontract.org/2004/07/GoQuo.DP.Entities"
+                                         i:nil="true"/>
+                  <b:NetAmount>0</b:NetAmount>
+                  <b:OBNoStops>0</b:OBNoStops>
+                  <b:ParentGroup i:nil="true"/>
+                  <b:PromotionStatus>0</b:PromotionStatus>
+                  <b:PunitID>13</b:PunitID>
+                  <b:ResultMsg xmlns:c="http://schemas.datacontract.org/2004/07/GoQuo.DP.Entities"
+                               i:nil="true"/>
+                  <b:SegLen>0</b:SegLen>
+                  <b:SegmentedFareBreakDown xmlns:c="http://schemas.datacontract.org/2004/07/GoQuo.DP.Entities">
+                    <c:SegmentFareInfoEN>
+                      <c:ArrCode>CNX</c:ArrCode>
+                      <c:CurrencyCode>THB</c:CurrencyCode>
+                      <c:DepCode>BKK</c:DepCode>
+                      <c:FareAmount>5300</c:FareAmount>
+                      <c:FareBasisCode>Y</c:FareBasisCode>
+                      <c:PaxType>ADT</c:PaxType>
+                      <c:ResultMsg i:nil="true"/>
+                      <c:SegmentIndex>0</c:SegmentIndex>
+                    </c:SegmentFareInfoEN>
+                    <c:SegmentFareInfoEN>
+                      <c:ArrCode>CNX</c:ArrCode>
+                      <c:CurrencyCode>THB</c:CurrencyCode>
+                      <c:DepCode>BKK</c:DepCode>
+                      <c:FareAmount>0</c:FareAmount>
+                      <c:FareBasisCode/>
+                      <c:PaxType>CNN</c:PaxType>
+                      <c:ResultMsg i:nil="true"/>
+                      <c:SegmentIndex>0</c:SegmentIndex>
+                    </c:SegmentFareInfoEN>
+                    <c:SegmentFareInfoEN>
+                      <c:ArrCode>CNX</c:ArrCode>
+                      <c:CurrencyCode>THB</c:CurrencyCode>
+                      <c:DepCode>BKK</c:DepCode>
+                      <c:FareAmount>0</c:FareAmount>
+                      <c:FareBasisCode/>
+                      <c:PaxType>INF</c:PaxType>
+                      <c:ResultMsg i:nil="true"/>
+                      <c:SegmentIndex>0</c:SegmentIndex>
+                    </c:SegmentFareInfoEN>
+                  </b:SegmentedFareBreakDown>
+                  <b:SpecialTypePax i:nil="true"/>
+                  <b:StrikeoutInfo i:nil="true"/>
+                  <b:TaxBreakDown>
+                    <b:TaxBreakDownInfo>
+                      <b:Amount>100.00</b:Amount>
+                      <b:BreakDownCode>TS</b:BreakDownCode>
+                      <b:CurrencyCode>THB</b:CurrencyCode>
+                      <b:Description/>
+                      <b:DisplayAmount>100</b:DisplayAmount>
+                      <b:DisplayCurrency>THB</b:DisplayCurrency>
+                      <b:DisplayDesc i:nil="true"/>
+                    </b:TaxBreakDownInfo>
+                  </b:TaxBreakDown>
+                  <b:UnCombineFares i:nil="true"/>
+                  <b:UpdatedPriceInfo i:nil="true"/>
+                  <b:UpdatedTaxMarkup>0</b:UpdatedTaxMarkup>
+                  <b:VATTax>0</b:VATTax>
+                  <b:WHTax>0</b:WHTax>
+                  <b:dispCurrencyCode>THB</b:dispCurrencyCode>
+                  <b:inBoundFlights i:nil="true"/>
+                  <b:outBoundFlights>
+                    <b:FlightSegment>
+                      <b:DefaultSelected>checked='checked'</b:DefaultSelected>
+                      <b:Index>13@0</b:Index>
+                      <b:IsSelected>false</b:IsSelected>
+                      <b:Segments>
+                        <b:GDS_FlightSegment>
+                          <b:ActualCabinClass>Web Freedom</b:ActualCabinClass>
+                          <b:ActualCabinClassCode>WFR</b:ActualCabinClassCode>
+                          <b:AdultFreeBaggageForDisplay i:nil="true"/>
+                          <b:AirCraft>320</b:AirCraft>
+                          <b:ArrAirName>Chiang Mai International Airport</b:ArrAirName>
+                          <b:ArrAirPort>CNX</b:ArrAirPort>
+                          <b:ArrAirPortCountry>Thailand</b:ArrAirPortCountry>
+                          <b:ArrCityName>Chiang Mai</b:ArrCityName>
+                          <b:ArrDate>29 Apr 2020</b:ArrDate>
+                          <b:ArrDateTime>2020-04-29T09:20:00</b:ArrDateTime>
+                          <b:ArrTime>09:20</b:ArrTime>
+                          <b:ArrivalTerminalInfo i:nil="true"/>
+                          <b:AvailSeats/>
+                          <b:BookingClass>Y</b:BookingClass>
+                          <b:CMFareBasis/>
+                          <b:CabinClass>Web Freedom</b:CabinClass>
+                          <b:CabinClassCode>WFR</b:CabinClassCode>
+                          <b:ChildFreeBaggageForDisplay i:nil="true"/>
+                          <b:ClassCode>E</b:ClassCode>
+                          <b:DepAirName>Suvarnabhumi Airport</b:DepAirName>
+                          <b:DepAirPort>BKK</b:DepAirPort>
+                          <b:DepAirPortCountry>Thailand</b:DepAirPortCountry>
+                          <b:DepCityName>Bangkok</b:DepCityName>
+                          <b:DepDate>29 Apr 2020</b:DepDate>
+                          <b:DepDateTime>2020-04-29T08:00:00</b:DepDateTime>
+                          <b:DepTime>08:00</b:DepTime>
+                          <b:DepartureTerminalInfo i:nil="true"/>
+                          <b:DisClosureAirline i:nil="true"/>
+                          <b:DispArrDate i:nil="true"/>
+                          <b:DispCabinClass>Web Freedom</b:DispCabinClass>
+                          <b:DispDepDate i:nil="true"/>
+                          <b:DispFBCode>Y</b:DispFBCode>
+                          <b:DispSegFBCode>Y</b:DispSegFBCode>
+                          <b:FBCode>Y</b:FBCode>
+                          <b:FlightNo>215</b:FlightNo>
+                          <b:FlightSegmentRef>SEG_BKKCNX_1</b:FlightSegmentRef>
+                          <b:FreeBaggageForDisplay i:nil="true"/>
+                          <b:InfantFreeBaggageForDisplay i:nil="true"/>
+                          <b:IntermediatePoints i:nil="true"/>
+                          <b:IsFirstSegment>false</b:IsFirstSegment>
+                          <b:JDuration/>
+                          <b:JDurationHRS i:nil="true"/>
+                          <b:JDurationMin i:nil="true"/>
+                          <b:JDurationText i:nil="true"/>
+                          <b:LegIndex>0</b:LegIndex>
+                          <b:MLFGCode>WFR</b:MLFGCode>
+                          <b:MarAirLine>PG</b:MarAirLine>
+                          <b:MarAirLineName>Bangkok Airways</b:MarAirLineName>
+                          <b:OprAirline>PG</b:OprAirline>
+                          <b:OprAirlineName>Bangkok Airways</b:OprAirlineName>
+                          <b:OtherPaxFreeBaggageForDisplay i:nil="true"/>
+                          <b:ParentCabinClassCode i:nil="true"/>
+                          <b:ProviderID i:nil="true"/>
+                          <b:SegFBCode>Y</b:SegFBCode>
+                          <b:SegmentIndex>1</b:SegmentIndex>
+                          <b:Stops>0</b:Stops>
+                          <b:TDuraMins>80</b:TDuraMins>
+                          <b:TDuration>01h 20m</b:TDuration>
+                          <b:TransTime i:nil="true"/>
+                          <b:TransTimeMins>0</b:TransTimeMins>
+                          <b:TravelTime>0</b:TravelTime>
+                          <b:Via i:nil="true"/>
+                          <b:isDisplayDuration>false</b:isDisplayDuration>
+                        </b:GDS_FlightSegment>
+                      </b:Segments>
+                      <b:Selected>false</b:Selected>
+                      <b:TotalDurInMin>80</b:TotalDurInMin>
+                      <b:TotalDuration>1 h 20 m</b:TotalDuration>
+                    </b:FlightSegment>
+                  </b:outBoundFlights>
+                  <b:priceInfo>
+                    <b:AdultMiles>0</b:AdultMiles>
+                    <b:AdultPerCash>0</b:AdultPerCash>
+                    <b:AdultPrice>
+                      <b:GstTaxPerPax>0</b:GstTaxPerPax>
+                      <b:PerPaxTaxBreakDown>
+                        <b:TaxBreakDownInfo>
+                          <b:Amount>100</b:Amount>
+                          <b:BreakDownCode>TS</b:BreakDownCode>
+                          <b:CurrencyCode>THB</b:CurrencyCode>
+                          <b:Description/>
+                          <b:DisplayAmount/>
+                          <b:DisplayCurrency>THB</b:DisplayCurrency>
+                          <b:DisplayDesc i:nil="true"/>
+                        </b:TaxBreakDownInfo>
+                      </b:PerPaxTaxBreakDown>
+                      <b:PricePerPax>5300</b:PricePerPax>
+                      <b:PromotionPerPax>0</b:PromotionPerPax>
+                      <b:SpecialFareType i:nil="true"/>
+                      <b:SpecialTypePaxCount>0</b:SpecialTypePaxCount>
+                      <b:TaxPerPax>100</b:TaxPerPax>
+                      <b:dispGstTaxPerPax>0</b:dispGstTaxPerPax>
+                      <b:dispMLTotalPricePerPax i:nil="true"/>
+                      <b:dispPricePerPax>5,300</b:dispPricePerPax>
+                      <b:dispPromotionPerPax/>
+                      <b:dispTaxPerPax>100</b:dispTaxPerPax>
+                      <b:dispTotalPricePerPax>5,400</b:dispTotalPricePerPax>
+                    </b:AdultPrice>
+                    <b:BaseFareDiff>0</b:BaseFareDiff>
+                    <b:BaseFarePrice>5300</b:BaseFarePrice>
+                    <b:BaseFareRoundingText/>
+                    <b:CCardCommision>0</b:CCardCommision>
+                    <b:CRatio>1</b:CRatio>
+                    <b:ChildMiles>0</b:ChildMiles>
+                    <b:ChildPrice i:nil="true"/>
+                    <b:DiffredTaxOnDiscount>0</b:DiffredTaxOnDiscount>
+                    <b:DispInsuranceAmt i:nil="true"/>
+                    <b:DispTotalWithInsurance i:nil="true"/>
+                    <b:FPromoAmount>0</b:FPromoAmount>
+                    <b:GSTTTotalTax>0</b:GSTTTotalTax>
+                    <b:GSTTax>0</b:GSTTax>
+                    <b:InfantMiles>0</b:InfantMiles>
+                    <b:InfantPrice i:nil="true"/>
+                    <b:InsuranceAmt>0</b:InsuranceAmt>
+                    <b:InsuranceName i:nil="true"/>
+                    <b:IsActualFareUpdated>false</b:IsActualFareUpdated>
+                    <b:IsCashPlusMiles>false</b:IsCashPlusMiles>
+                    <b:IsMilesFare>false</b:IsMilesFare>
+                    <b:IsShowUpdatePrice>false</b:IsShowUpdatePrice>
+                    <b:LoyaltyPrice xmlns:c="http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL.Loyalty"
+                                    i:nil="true"/>
+                    <b:MilesBaseFare>0</b:MilesBaseFare>
+                    <b:MilesToUse>0</b:MilesToUse>
+                    <b:PerSegPaxPriceDiff i:nil="true"/>
+                    <b:PkgAmountWithPromotion>0</b:PkgAmountWithPromotion>
+                    <b:PkgAmt>5300</b:PkgAmt>
+                    <b:PkgDispAmt>5,300</b:PkgDispAmt>
+                    <b:PkgMilesAmt>0</b:PkgMilesAmt>
+                    <b:PriceDiff>0</b:PriceDiff>
+                    <b:PromotionTotalAmount>0</b:PromotionTotalAmount>
+                    <b:SpecialPrice i:nil="true"/>
+                    <b:StrikeoutFarePrice>0</b:StrikeoutFarePrice>
+                    <b:StrikeoutTotalPrice>0</b:StrikeoutTotalPrice>
+                    <b:TotalAdultMiles>0</b:TotalAdultMiles>
+                    <b:TotalChildMiles>0</b:TotalChildMiles>
+                    <b:TotalFareRound>0</b:TotalFareRound>
+                    <b:TotalInfantMiles>0</b:TotalInfantMiles>
+                    <b:TotalMarkup>0</b:TotalMarkup>
+                    <b:TotalMiles>0</b:TotalMiles>
+                    <b:TotalPrice>5400</b:TotalPrice>
+                    <b:TotalTax>100</b:TotalTax>
+                    <b:TotalTaxwithoutGST>0</b:TotalTaxwithoutGST>
+                    <b:Totalb2bMarkup>0</b:Totalb2bMarkup>
+                    <b:VoucherAmount>0.00</b:VoucherAmount>
+                    <b:dispBaseFareDiff i:nil="true"/>
+                    <b:dispBaseFarePrice i:nil="true"/>
+                    <b:dispGSTTax i:nil="true"/>
+                    <b:dispGSTTotalTax i:nil="true"/>
+                    <b:dispPkgAmountWithPromotion/>
+                    <b:dispPriceDiff i:nil="true"/>
+                    <b:dispPriceText>Avg Price Per Person</b:dispPriceText>
+                    <b:dispPromotionTotalAmount/>
+                    <b:dispStrikeoutFarePrice i:nil="true"/>
+                    <b:dispStrikeoutTotalPrice i:nil="true"/>
+                    <b:dispTotalPrice>5,300</b:dispTotalPrice>
+                    <b:dispTotalTax>100</b:dispTotalTax>
+                    <b:dispTotalTaxwithoutGST i:nil="true"/>
+                  </b:priceInfo>
+                </b:FGFlight>
+                <b:FGIndex>3</b:FGIndex>
+                <b:FareGroup>Web Freedom</b:FareGroup>
+                <b:FareGroupCode>WFR</b:FareGroupCode>
+                <b:ParentGroupName i:nil="true"/>
+              </b:FareGroupFlight>
+            </b:FareGroupFlights>
+            <b:FirstFlight i:nil="true"/>
+            <b:FlightAmount>0</b:FlightAmount>
+            <b:FlightIndex>1</b:FlightIndex>
+            <b:FlightNo>215</b:FlightNo>
+            <b:FuelStopOverCountry i:nil="true"/>
+            <b:HasBusinessClass>false</b:HasBusinessClass>
+            <b:HasBusinessFlexiClass>false</b:HasBusinessFlexiClass>
+            <b:HasEconomyFlexiClass>false</b:HasEconomyFlexiClass>
+            <b:HasPremiumEconomyClass>false</b:HasPremiumEconomyClass>
+            <b:HasSuperSaverClass>false</b:HasSuperSaverClass>
+            <b:IBAvailFareGroups i:nil="true"/>
+            <b:IsActualData>true</b:IsActualData>
+            <b:IsArrCombineFlight>false</b:IsArrCombineFlight>
+            <b:IsBusinessFlexiNA>false</b:IsBusinessFlexiNA>
+            <b:IsBusinessNA>false</b:IsBusinessNA>
+            <b:IsDepCombineFlight>false</b:IsDepCombineFlight>
+            <b:IsDepartureConnectionFlight>false</b:IsDepartureConnectionFlight>
+            <b:IsEconomyNA>false</b:IsEconomyNA>
+            <b:IsFirstFlight>true</b:IsFirstFlight>
+            <b:IsFuelStopOver>false</b:IsFuelStopOver>
+            <b:IsHideFlightPrice>false</b:IsHideFlightPrice>
+            <b:IsMilesBooking>false</b:IsMilesBooking>
+            <b:IsNoShowFee>false</b:IsNoShowFee>
+            <b:IsPremiumEconomyNA>false</b:IsPremiumEconomyNA>
+            <b:IsPromoClassApplied>false</b:IsPromoClassApplied>
+            <b:IsPromoNA>false</b:IsPromoNA>
+            <b:IsShowBusiness>false</b:IsShowBusiness>
+            <b:IsShowBusinessFlexi>false</b:IsShowBusinessFlexi>
+            <b:IsShowEconomy>false</b:IsShowEconomy>
+            <b:IsShowPremiumEconomy>false</b:IsShowPremiumEconomy>
+            <b:IsShowPromo>false</b:IsShowPromo>
+            <b:IsShowSuperSaver>false</b:IsShowSuperSaver>
+            <b:IsShowmEconomyFlexi>false</b:IsShowmEconomyFlexi>
+            <b:IsValidPromoCode>false</b:IsValidPromoCode>
+            <b:MACode>PG</b:MACode>
+            <b:MAName>Bangkok Airways</b:MAName>
+            <b:MANameML>Bangkok Airways</b:MANameML>
+            <b:MLFlightList i:nil="true"/>
+            <b:MLPriceInformation i:nil="true"/>
+            <b:MinFlightClass i:nil="true"/>
+            <b:NoAdults>1</b:NoAdults>
+            <b:NoChildren>0</b:NoChildren>
+            <b:NoInfants>0</b:NoInfants>
+            <b:NoSpecialPax i:nil="true"/>
+            <b:NoStops>0</b:NoStops>
+            <b:OBAvailFareGroups>
+              <b:FareGroupAirlineFlight>
+                <b:DispFareGroup>Web Promotion</b:DispFareGroup>
+                <b:FareGroup>Web Promotion</b:FareGroup>
+                <b:FareGroupCode>WP</b:FareGroupCode>
+                <b:FareGroupDesc>&lt;strong&gt;Date/ flight change&lt;/strong&gt; - change fee apply&lt;br/&gt;&lt;strong&gt;Refund - Refer fare rules&lt;/strong&gt;</b:FareGroupDesc>
+                <b:FreeBaggageAllowance i:nil="true"/>
+                <b:HasFlights>true</b:HasFlights>
+              </b:FareGroupAirlineFlight>
+              <b:FareGroupAirlineFlight>
+                <b:DispFareGroup>Web Saver</b:DispFareGroup>
+                <b:FareGroup>Web Saver</b:FareGroup>
+                <b:FareGroupCode>WS</b:FareGroupCode>
+                <b:FareGroupDesc>&lt;strong&gt;Date/ flight change&lt;/strong&gt; - free of charge&lt;br/&gt;&lt;strong&gt;Before departure&lt;/strong&gt;
+                  - refund with fee&lt;br/&gt;&lt;strong&gt;After departure&lt;/strong&gt; - non refundable
+                </b:FareGroupDesc>
+                <b:FreeBaggageAllowance i:nil="true"/>
+                <b:HasFlights>true</b:HasFlights>
+              </b:FareGroupAirlineFlight>
+              <b:FareGroupAirlineFlight>
+                <b:DispFareGroup>Web Freedom</b:DispFareGroup>
+                <b:FareGroup>Web Freedom</b:FareGroup>
+                <b:FareGroupCode>WFR</b:FareGroupCode>
+                <b:FareGroupDesc>&lt;strong&gt;Date/ flight change&lt;/strong&gt; - free of charge&lt;br/&gt;&lt;strong&gt;Before departure&lt;/strong&gt;
+                  - refund with fee&lt;br/&gt;&lt;strong&gt;After departure&lt;/strong&gt; - refund with fee
+                </b:FareGroupDesc>
+                <b:FreeBaggageAllowance i:nil="true"/>
+                <b:HasFlights>true</b:HasFlights>
+              </b:FareGroupAirlineFlight>
+              <b:FareGroupAirlineFlight>
+                <b:DispFareGroup>Blue Ribbon</b:DispFareGroup>
+                <b:FareGroup>Web Blue Ribbon</b:FareGroup>
+                <b:FareGroupCode>WBR</b:FareGroupCode>
+                <b:FareGroupDesc>&lt;strong&gt;Date/ flight change&lt;/strong&gt; - free of charge&lt;br/&gt;&lt;strong&gt;Before departure&lt;/strong&gt;
+                  - refund with fee&lt;br/&gt;&lt;strong&gt;After departure&lt;/strong&gt; - refund with fee&lt;br/&gt; service business class&lt;br/&gt;Free
+                  30KG baggage allowance
+                </b:FareGroupDesc>
+                <b:FreeBaggageAllowance i:nil="true"/>
+                <b:HasFlights>false</b:HasFlights>
+              </b:FareGroupAirlineFlight>
+            </b:OBAvailFareGroups>
+            <b:PUnitID>0</b:PUnitID>
+            <b:PerAdultPrice>0</b:PerAdultPrice>
+            <b:PremiumEconomyFlight i:nil="true"/>
+            <b:PromoFlight i:nil="true"/>
+            <b:Region>D</b:Region>
+            <b:SegmentInformation>
+              <b:AirlineFlightSegment>
+                <b:AirCraft>320</b:AirCraft>
+                <b:ArrAirportCityName>Chiang Mai</b:ArrAirportCityName>
+                <b:ArrCity>CNX</b:ArrCity>
+                <b:ArrCityName>Chiang Mai International Airport</b:ArrCityName>
+                <b:ArrDate>29 Apr 2020</b:ArrDate>
+                <b:ArrTime>09:20</b:ArrTime>
+                <b:ArrivalDate>2020-04-29T09:20:00</b:ArrivalDate>
+                <b:DepAirportCityName>Bangkok</b:DepAirportCityName>
+                <b:DepCity>BKK</b:DepCity>
+                <b:DepCityName>Suvarnabhumi Airport</b:DepCityName>
+                <b:DepDate>29 Apr 2020</b:DepDate>
+                <b:DepTime>08:00</b:DepTime>
+                <b:DepartureDate>2020-04-29T08:00:00</b:DepartureDate>
+                <b:DisClosureAirline i:nil="true"/>
+                <b:FlightNo>215</b:FlightNo>
+                <b:FuelStopOver i:nil="true"/>
+                <b:IntermediatePoints i:nil="true"/>
+                <b:MACode>PG</b:MACode>
+                <b:MAName>Bangkok Airways</b:MAName>
+                <b:MANameML>Bangkok Airways</b:MANameML>
+                <b:NoOfStops>0</b:NoOfStops>
+                <b:OprAirlineCode>PG</b:OprAirlineCode>
+                <b:OprAirlineName>Bangkok Airways</b:OprAirlineName>
+                <b:SegBookingClass>A</b:SegBookingClass>
+                <b:TDuration>01h 20m</b:TDuration>
+                <b:TDurationMins>0</b:TDurationMins>
+                <b:TransTime i:nil="true"/>
+                <b:TransTimeMins>0</b:TransTimeMins>
+                <b:Via i:nil="true"/>
+              </b:AirlineFlightSegment>
+            </b:SegmentInformation>
+            <b:SuperSaverFlight i:nil="true"/>
+            <b:TotalDura>01h 20m</b:TotalDura>
+            <b:TotalNoStops>0</b:TotalNoStops>
+            <b:TotalSegmentsWithStopOver>1</b:TotalSegmentsWithStopOver>
+            <b:dispFlightAmount i:nil="true"/>
+          </b:AirlineFlight>
+        </b:AvailableFlights>
+        <b:AvailableFreeBaggages/>
+        <b:ErrorDetails i:nil="true"/>
+        <b:afid>0</b:afid>
+        <b:aid>215</b:aid>
+        <b:b2bid>2599</b:b2bid>
+        <b:userLoginID>5237</b:userLoginID>
+      </SearchFlightResult>
+    </SearchFlightResponse>
+  </s:Body>
+</s:Envelope>
