@@ -1,19 +1,18 @@
-
 package com.traveloka.hibernate.model.pg.goquo_dp;
 
-import javax.xml.bind.JAXBElement;
+import lombok.Data;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
  * <p>Java class for Result complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="Result">
  *   &lt;complexContent>
@@ -27,9 +26,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
+
+@Data
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "Result", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.Entities", propOrder = {
     "data",
@@ -38,83 +37,11 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class Result {
 
-    @XmlElementRef(name = "Data", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.Entities", type = JAXBElement.class, required = false)
-    protected JAXBElement<String> data;
-    @XmlElement(name = "IsSuccess")
-    protected Boolean isSuccess;
-    @XmlElementRef(name = "Msgs", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.Entities", type = JAXBElement.class, required = false)
-    protected JAXBElement<ArrayOfMessage> msgs;
-
-    /**
-     * Gets the value of the data property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public JAXBElement<String> getData() {
-        return data;
-    }
-
-    /**
-     * Sets the value of the data property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public void setData(JAXBElement<String> value) {
-        this.data = value;
-    }
-
-    /**
-     * Gets the value of the isSuccess property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIsSuccess() {
-        return isSuccess;
-    }
-
-    /**
-     * Sets the value of the isSuccess property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIsSuccess(Boolean value) {
-        this.isSuccess = value;
-    }
-
-    /**
-     * Gets the value of the msgs property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link ArrayOfMessage }{@code >}
-     *     
-     */
-    public JAXBElement<ArrayOfMessage> getMsgs() {
-        return msgs;
-    }
-
-    /**
-     * Sets the value of the msgs property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link ArrayOfMessage }{@code >}
-     *     
-     */
-    public void setMsgs(JAXBElement<ArrayOfMessage> value) {
-        this.msgs = value;
-    }
+  @XmlElement(name = "Data", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.Entities", required = false)
+  protected String data;
+  @XmlElement(name = "IsSuccess")
+  protected Boolean isSuccess;
+  @XmlElement(name = "Msgs", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.Entities", required = false)
+  protected ArrayOfMessage msgs;
 
 }

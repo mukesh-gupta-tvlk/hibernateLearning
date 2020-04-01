@@ -1,20 +1,20 @@
-
 package com.traveloka.hibernate.model.pg.goquo_dp;
+
+import lombok.Data;
 
 import java.math.BigDecimal;
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
  * <p>Java class for TaxBreakDownInfo complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="TaxBreakDownInfo">
  *   &lt;complexContent>
@@ -32,9 +32,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
+
+@Data
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "TaxBreakDownInfo", propOrder = {
     "amount",
@@ -47,187 +47,19 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class TaxBreakDownInfo {
 
-    @XmlElement(name = "Amount")
-    protected BigDecimal amount;
-    @XmlElementRef(name = "BreakDownCode", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-    protected JAXBElement<String> breakDownCode;
-    @XmlElementRef(name = "CurrencyCode", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-    protected JAXBElement<String> currencyCode;
-    @XmlElementRef(name = "Description", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-    protected JAXBElement<String> description;
-    @XmlElementRef(name = "DisplayAmount", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-    protected JAXBElement<String> displayAmount;
-    @XmlElementRef(name = "DisplayCurrency", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-    protected JAXBElement<String> displayCurrency;
-    @XmlElementRef(name = "DisplayDesc", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-    protected JAXBElement<String> displayDesc;
-
-    /**
-     * Gets the value of the amount property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public BigDecimal getAmount() {
-        return amount;
-    }
-
-    /**
-     * Sets the value of the amount property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public void setAmount(BigDecimal value) {
-        this.amount = value;
-    }
-
-    /**
-     * Gets the value of the breakDownCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public JAXBElement<String> getBreakDownCode() {
-        return breakDownCode;
-    }
-
-    /**
-     * Sets the value of the breakDownCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public void setBreakDownCode(JAXBElement<String> value) {
-        this.breakDownCode = value;
-    }
-
-    /**
-     * Gets the value of the currencyCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public JAXBElement<String> getCurrencyCode() {
-        return currencyCode;
-    }
-
-    /**
-     * Sets the value of the currencyCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public void setCurrencyCode(JAXBElement<String> value) {
-        this.currencyCode = value;
-    }
-
-    /**
-     * Gets the value of the description property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public JAXBElement<String> getDescription() {
-        return description;
-    }
-
-    /**
-     * Sets the value of the description property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public void setDescription(JAXBElement<String> value) {
-        this.description = value;
-    }
-
-    /**
-     * Gets the value of the displayAmount property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public JAXBElement<String> getDisplayAmount() {
-        return displayAmount;
-    }
-
-    /**
-     * Sets the value of the displayAmount property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public void setDisplayAmount(JAXBElement<String> value) {
-        this.displayAmount = value;
-    }
-
-    /**
-     * Gets the value of the displayCurrency property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public JAXBElement<String> getDisplayCurrency() {
-        return displayCurrency;
-    }
-
-    /**
-     * Sets the value of the displayCurrency property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public void setDisplayCurrency(JAXBElement<String> value) {
-        this.displayCurrency = value;
-    }
-
-    /**
-     * Gets the value of the displayDesc property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public JAXBElement<String> getDisplayDesc() {
-        return displayDesc;
-    }
-
-    /**
-     * Sets the value of the displayDesc property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public void setDisplayDesc(JAXBElement<String> value) {
-        this.displayDesc = value;
-    }
+  @XmlElement(name = "Amount")
+  protected BigDecimal amount;
+  @XmlElement(name = "BreakDownCode", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+  protected String breakDownCode;
+  @XmlElement(name = "CurrencyCode", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+  protected String currencyCode;
+  @XmlElement(name = "Description", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+  protected String description;
+  @XmlElement(name = "DisplayAmount", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+  protected String displayAmount;
+  @XmlElement(name = "DisplayCurrency", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+  protected String displayCurrency;
+  @XmlElement(name = "DisplayDesc", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+  protected String displayDesc;
 
 }

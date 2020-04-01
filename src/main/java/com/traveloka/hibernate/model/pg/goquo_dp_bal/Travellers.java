@@ -1,19 +1,18 @@
-
 package com.traveloka.hibernate.model.pg.goquo_dp_bal;
 
-import javax.xml.bind.JAXBElement;
+import lombok.Data;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
  * <p>Java class for Travellers complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="Travellers">
  *   &lt;complexContent>
@@ -27,9 +26,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
+
+@Data
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "Travellers", propOrder = {
     "individualPremium",
@@ -38,83 +37,11 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class Travellers {
 
-    @XmlElement(name = "IndividualPremium")
-    protected Double individualPremium;
-    @XmlElementRef(name = "TotalPax", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL.Insurances", type = JAXBElement.class, required = false)
-    protected JAXBElement<String> totalPax;
-    @XmlElementRef(name = "Type", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL.Insurances", type = JAXBElement.class, required = false)
-    protected JAXBElement<String> type;
-
-    /**
-     * Gets the value of the individualPremium property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getIndividualPremium() {
-        return individualPremium;
-    }
-
-    /**
-     * Sets the value of the individualPremium property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setIndividualPremium(Double value) {
-        this.individualPremium = value;
-    }
-
-    /**
-     * Gets the value of the totalPax property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public JAXBElement<String> getTotalPax() {
-        return totalPax;
-    }
-
-    /**
-     * Sets the value of the totalPax property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public void setTotalPax(JAXBElement<String> value) {
-        this.totalPax = value;
-    }
-
-    /**
-     * Gets the value of the type property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public JAXBElement<String> getType() {
-        return type;
-    }
-
-    /**
-     * Sets the value of the type property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public void setType(JAXBElement<String> value) {
-        this.type = value;
-    }
+  @XmlElement(name = "IndividualPremium")
+  protected Double individualPremium;
+  @XmlElement(name = "TotalPax", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL.Insurances", required = false)
+  protected String totalPax;
+  @XmlElement(name = "Type", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL.Insurances", required = false)
+  protected String type;
 
 }

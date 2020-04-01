@@ -1,21 +1,20 @@
-
 package com.traveloka.hibernate.model.pg.tempuri;
 
-import com.traveloka.hibernate.model.pg.goquo_dp.FlightSearchReponse;
+import com.traveloka.hibernate.model.pg.goquo_dp.SearchFlightResult;
+import lombok.Data;
 
-import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElementRef;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
  * <p>Java class for anonymous complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType>
  *   &lt;complexContent>
@@ -27,9 +26,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
+@Data
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
     "searchFlightResult"
@@ -37,31 +35,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "SearchFlightResponse")
 public class SearchFlightResponse {
 
-    @XmlElementRef(name = "SearchFlightResult", namespace = "http://tempuri.org/", type = JAXBElement.class, required = false)
-    protected JAXBElement<FlightSearchReponse> searchFlightResult;
-
-    /**
-     * Gets the value of the searchFlightResult property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link FlightSearchReponse }{@code >}
-     *     
-     */
-    public JAXBElement<FlightSearchReponse> getSearchFlightResult() {
-        return searchFlightResult;
-    }
-
-    /**
-     * Sets the value of the searchFlightResult property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link FlightSearchReponse }{@code >}
-     *     
-     */
-    public void setSearchFlightResult(JAXBElement<FlightSearchReponse> value) {
-        this.searchFlightResult = value;
-    }
+  @XmlElement(name = "SearchFlightResult", namespace = "http://tempuri.org/", required = false)
+  protected SearchFlightResult searchFlightResult;
 
 }

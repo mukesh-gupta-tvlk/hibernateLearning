@@ -1,11 +1,13 @@
 
 package com.traveloka.hibernate.model.pg.goquo_dp;
 
+import lombok.Data;
+
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementRef;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -29,6 +31,7 @@ import javax.xml.bind.annotation.XmlType;
  * 
  * 
  */
+@Data
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "FlightError", propOrder = {
     "errMsg",
@@ -36,57 +39,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class FlightError {
 
-    @XmlElementRef(name = "ErrMsg", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-    protected JAXBElement<String> errMsg;
+    @XmlElement(name = "ErrMsg", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+    protected String errMsg;
     @XmlElement(name = "ErrNum")
     protected Integer errNum;
-
-    /**
-     * Gets the value of the errMsg property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public JAXBElement<String> getErrMsg() {
-        return errMsg;
-    }
-
-    /**
-     * Sets the value of the errMsg property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public void setErrMsg(JAXBElement<String> value) {
-        this.errMsg = value;
-    }
-
-    /**
-     * Gets the value of the errNum property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getErrNum() {
-        return errNum;
-    }
-
-    /**
-     * Sets the value of the errNum property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setErrNum(Integer value) {
-        this.errNum = value;
-    }
 
 }

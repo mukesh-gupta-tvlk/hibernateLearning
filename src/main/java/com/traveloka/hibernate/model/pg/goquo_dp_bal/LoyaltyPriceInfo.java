@@ -1,20 +1,19 @@
-
 package com.traveloka.hibernate.model.pg.goquo_dp_bal;
 
+import lombok.Data;
+
 import java.math.BigDecimal;
-import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
  * <p>Java class for LoyaltyPriceInfo complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="LoyaltyPriceInfo">
  *   &lt;complexContent>
@@ -31,9 +30,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
+
+@Data
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "LoyaltyPriceInfo", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL.Loyalty", propOrder = {
     "totalAwardFee",
@@ -45,161 +44,16 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class LoyaltyPriceInfo {
 
-    @XmlElement(name = "TotalAwardFee")
-    protected BigDecimal totalAwardFee;
-    @XmlElement(name = "TotalBookingFee")
-    protected BigDecimal totalBookingFee;
-    @XmlElement(name = "TotalCashTobePaid")
-    protected BigDecimal totalCashTobePaid;
-    @XmlElement(name = "TotalLoyaltyPoints")
-    protected BigDecimal totalLoyaltyPoints;
-    @XmlElement(name = "TotalYQ")
-    protected BigDecimal totalYQ;
-    @XmlElementRef(name = "lstPaxSectorPriceInfo", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL.Loyalty", type = JAXBElement.class, required = false)
-    protected JAXBElement<ArrayOfLoyaltyPaxSectorPriceInfo> lstPaxSectorPriceInfo;
-
-    /**
-     * Gets the value of the totalAwardFee property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public BigDecimal getTotalAwardFee() {
-        return totalAwardFee;
-    }
-
-    /**
-     * Sets the value of the totalAwardFee property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public void setTotalAwardFee(BigDecimal value) {
-        this.totalAwardFee = value;
-    }
-
-    /**
-     * Gets the value of the totalBookingFee property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public BigDecimal getTotalBookingFee() {
-        return totalBookingFee;
-    }
-
-    /**
-     * Sets the value of the totalBookingFee property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public void setTotalBookingFee(BigDecimal value) {
-        this.totalBookingFee = value;
-    }
-
-    /**
-     * Gets the value of the totalCashTobePaid property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public BigDecimal getTotalCashTobePaid() {
-        return totalCashTobePaid;
-    }
-
-    /**
-     * Sets the value of the totalCashTobePaid property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public void setTotalCashTobePaid(BigDecimal value) {
-        this.totalCashTobePaid = value;
-    }
-
-    /**
-     * Gets the value of the totalLoyaltyPoints property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public BigDecimal getTotalLoyaltyPoints() {
-        return totalLoyaltyPoints;
-    }
-
-    /**
-     * Sets the value of the totalLoyaltyPoints property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public void setTotalLoyaltyPoints(BigDecimal value) {
-        this.totalLoyaltyPoints = value;
-    }
-
-    /**
-     * Gets the value of the totalYQ property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public BigDecimal getTotalYQ() {
-        return totalYQ;
-    }
-
-    /**
-     * Sets the value of the totalYQ property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public void setTotalYQ(BigDecimal value) {
-        this.totalYQ = value;
-    }
-
-    /**
-     * Gets the value of the lstPaxSectorPriceInfo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link ArrayOfLoyaltyPaxSectorPriceInfo }{@code >}
-     *     
-     */
-    public JAXBElement<ArrayOfLoyaltyPaxSectorPriceInfo> getLstPaxSectorPriceInfo() {
-        return lstPaxSectorPriceInfo;
-    }
-
-    /**
-     * Sets the value of the lstPaxSectorPriceInfo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link ArrayOfLoyaltyPaxSectorPriceInfo }{@code >}
-     *     
-     */
-    public void setLstPaxSectorPriceInfo(JAXBElement<ArrayOfLoyaltyPaxSectorPriceInfo> value) {
-        this.lstPaxSectorPriceInfo = value;
-    }
-
+  @XmlElement(name = "TotalAwardFee")
+  protected BigDecimal totalAwardFee;
+  @XmlElement(name = "TotalBookingFee")
+  protected BigDecimal totalBookingFee;
+  @XmlElement(name = "TotalCashTobePaid")
+  protected BigDecimal totalCashTobePaid;
+  @XmlElement(name = "TotalLoyaltyPoints")
+  protected BigDecimal totalLoyaltyPoints;
+  @XmlElement(name = "TotalYQ")
+  protected BigDecimal totalYQ;
+  @XmlElement(name = "lstPaxSectorPriceInfo", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL.Loyalty", required = false)
+  protected ArrayOfLoyaltyPaxSectorPriceInfo lstPaxSectorPriceInfo;
 }

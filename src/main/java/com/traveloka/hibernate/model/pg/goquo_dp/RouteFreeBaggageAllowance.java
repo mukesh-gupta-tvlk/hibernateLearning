@@ -1,10 +1,12 @@
 
 package com.traveloka.hibernate.model.pg.goquo_dp;
 
+import lombok.Data;
+
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElementRef;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -31,6 +33,8 @@ import javax.xml.bind.annotation.XmlType;
  * 
  * 
  */
+
+@Data
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "RouteFreeBaggageAllowance", propOrder = {
     "arrCity",
@@ -41,135 +45,16 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class RouteFreeBaggageAllowance {
 
-    @XmlElementRef(name = "ArrCity", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-    protected JAXBElement<String> arrCity;
-    @XmlElementRef(name = "CabinClassCode", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-    protected JAXBElement<String> cabinClassCode;
-    @XmlElementRef(name = "ClassCode", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-    protected JAXBElement<String> classCode;
-    @XmlElementRef(name = "DepCity", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-    protected JAXBElement<String> depCity;
-    @XmlElementRef(name = "FBA", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-    protected JAXBElement<FreeBaggageAllowance> fba;
+    @XmlElement(name = "ArrCity", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+    protected String arrCity;
+    @XmlElement(name = "CabinClassCode", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+    protected String cabinClassCode;
+    @XmlElement(name = "ClassCode", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+    protected String classCode;
+    @XmlElement(name = "DepCity", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+    protected String depCity;
+    @XmlElement(name = "FBA", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+    protected FreeBaggageAllowance fba;
 
-    /**
-     * Gets the value of the arrCity property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public JAXBElement<String> getArrCity() {
-        return arrCity;
-    }
-
-    /**
-     * Sets the value of the arrCity property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public void setArrCity(JAXBElement<String> value) {
-        this.arrCity = value;
-    }
-
-    /**
-     * Gets the value of the cabinClassCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public JAXBElement<String> getCabinClassCode() {
-        return cabinClassCode;
-    }
-
-    /**
-     * Sets the value of the cabinClassCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public void setCabinClassCode(JAXBElement<String> value) {
-        this.cabinClassCode = value;
-    }
-
-    /**
-     * Gets the value of the classCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public JAXBElement<String> getClassCode() {
-        return classCode;
-    }
-
-    /**
-     * Sets the value of the classCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public void setClassCode(JAXBElement<String> value) {
-        this.classCode = value;
-    }
-
-    /**
-     * Gets the value of the depCity property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public JAXBElement<String> getDepCity() {
-        return depCity;
-    }
-
-    /**
-     * Sets the value of the depCity property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public void setDepCity(JAXBElement<String> value) {
-        this.depCity = value;
-    }
-
-    /**
-     * Gets the value of the fba property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link FreeBaggageAllowance }{@code >}
-     *     
-     */
-    public JAXBElement<FreeBaggageAllowance> getFBA() {
-        return fba;
-    }
-
-    /**
-     * Sets the value of the fba property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link FreeBaggageAllowance }{@code >}
-     *     
-     */
-    public void setFBA(JAXBElement<FreeBaggageAllowance> value) {
-        this.fba = value;
-    }
 
 }

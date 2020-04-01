@@ -1,20 +1,19 @@
-
 package com.traveloka.hibernate.model.pg.goquo_dp;
 
+import lombok.Data;
+
 import java.math.BigDecimal;
-import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
  * <p>Java class for InsuranceGSTInfo complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="InsuranceGSTInfo">
  *   &lt;complexContent>
@@ -31,9 +30,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
+
+@Data
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "InsuranceGSTInfo", propOrder = {
     "currencyCode",
@@ -45,161 +44,18 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class InsuranceGSTInfo {
 
-    @XmlElementRef(name = "CurrencyCode", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-    protected JAXBElement<String> currencyCode;
-    @XmlElementRef(name = "InsuranceGSTTaxCode", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-    protected JAXBElement<String> insuranceGSTTaxCode;
-    @XmlElement(name = "PerTaxGST")
-    protected BigDecimal perTaxGST;
-    @XmlElementRef(name = "TaxDescription", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-    protected JAXBElement<String> taxDescription;
-    @XmlElement(name = "TotalTaxAmount")
-    protected BigDecimal totalTaxAmount;
-    @XmlElementRef(name = "dispTotalTaxAmount", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-    protected JAXBElement<String> dispTotalTaxAmount;
+  @XmlElement(name = "CurrencyCode", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+  protected String currencyCode;
+  @XmlElement(name = "InsuranceGSTTaxCode", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+  protected String insuranceGSTTaxCode;
+  @XmlElement(name = "PerTaxGST")
+  protected BigDecimal perTaxGST;
+  @XmlElement(name = "TaxDescription", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+  protected String taxDescription;
+  @XmlElement(name = "TotalTaxAmount")
+  protected BigDecimal totalTaxAmount;
+  @XmlElement(name = "dispTotalTaxAmount", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+  protected String dispTotalTaxAmount;
 
-    /**
-     * Gets the value of the currencyCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public JAXBElement<String> getCurrencyCode() {
-        return currencyCode;
-    }
-
-    /**
-     * Sets the value of the currencyCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public void setCurrencyCode(JAXBElement<String> value) {
-        this.currencyCode = value;
-    }
-
-    /**
-     * Gets the value of the insuranceGSTTaxCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public JAXBElement<String> getInsuranceGSTTaxCode() {
-        return insuranceGSTTaxCode;
-    }
-
-    /**
-     * Sets the value of the insuranceGSTTaxCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public void setInsuranceGSTTaxCode(JAXBElement<String> value) {
-        this.insuranceGSTTaxCode = value;
-    }
-
-    /**
-     * Gets the value of the perTaxGST property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public BigDecimal getPerTaxGST() {
-        return perTaxGST;
-    }
-
-    /**
-     * Sets the value of the perTaxGST property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public void setPerTaxGST(BigDecimal value) {
-        this.perTaxGST = value;
-    }
-
-    /**
-     * Gets the value of the taxDescription property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public JAXBElement<String> getTaxDescription() {
-        return taxDescription;
-    }
-
-    /**
-     * Sets the value of the taxDescription property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public void setTaxDescription(JAXBElement<String> value) {
-        this.taxDescription = value;
-    }
-
-    /**
-     * Gets the value of the totalTaxAmount property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public BigDecimal getTotalTaxAmount() {
-        return totalTaxAmount;
-    }
-
-    /**
-     * Sets the value of the totalTaxAmount property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public void setTotalTaxAmount(BigDecimal value) {
-        this.totalTaxAmount = value;
-    }
-
-    /**
-     * Gets the value of the dispTotalTaxAmount property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public JAXBElement<String> getDispTotalTaxAmount() {
-        return dispTotalTaxAmount;
-    }
-
-    /**
-     * Sets the value of the dispTotalTaxAmount property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public void setDispTotalTaxAmount(JAXBElement<String> value) {
-        this.dispTotalTaxAmount = value;
-    }
 
 }

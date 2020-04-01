@@ -1,11 +1,11 @@
 package com.traveloka.hibernate.model.pg.goquo_dp;
 
 import com.traveloka.hibernate.model.pg.serialization.arrays.ArrayOfstring;
+import lombok.Data;
 
-import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElementRef;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -29,6 +29,8 @@ import javax.xml.bind.annotation.XmlType;
  * &lt;/complexType>
  * </pre>
  */
+
+@Data
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DisClosureAirline", propOrder = {
     "airlineCode",
@@ -38,93 +40,13 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class DisClosureAirline {
 
-  @XmlElementRef(name = "AirlineCode", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-  protected JAXBElement<String> airlineCode;
-  @XmlElementRef(name = "Code", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-  protected JAXBElement<String> code;
-  @XmlElementRef(name = "CompanyShortName", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-  protected JAXBElement<String> companyShortName;
-  @XmlElementRef(name = "text", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-  protected JAXBElement<ArrayOfstring> text;
-
-  /**
-   * Gets the value of the airlineCode property.
-   *
-   * @return possible object is
-   * {@link JAXBElement }{@code <}{@link String }{@code >}
-   */
-  public JAXBElement<String> getAirlineCode() {
-    return airlineCode;
-  }
-
-  /**
-   * Sets the value of the airlineCode property.
-   *
-   * @param value allowed object is
-   *              {@link JAXBElement }{@code <}{@link String }{@code >}
-   */
-  public void setAirlineCode(JAXBElement<String> value) {
-    this.airlineCode = value;
-  }
-
-  /**
-   * Gets the value of the code property.
-   *
-   * @return possible object is
-   * {@link JAXBElement }{@code <}{@link String }{@code >}
-   */
-  public JAXBElement<String> getCode() {
-    return code;
-  }
-
-  /**
-   * Sets the value of the code property.
-   *
-   * @param value allowed object is
-   *              {@link JAXBElement }{@code <}{@link String }{@code >}
-   */
-  public void setCode(JAXBElement<String> value) {
-    this.code = value;
-  }
-
-  /**
-   * Gets the value of the companyShortName property.
-   *
-   * @return possible object is
-   * {@link JAXBElement }{@code <}{@link String }{@code >}
-   */
-  public JAXBElement<String> getCompanyShortName() {
-    return companyShortName;
-  }
-
-  /**
-   * Sets the value of the companyShortName property.
-   *
-   * @param value allowed object is
-   *              {@link JAXBElement }{@code <}{@link String }{@code >}
-   */
-  public void setCompanyShortName(JAXBElement<String> value) {
-    this.companyShortName = value;
-  }
-
-  /**
-   * Gets the value of the text property.
-   *
-   * @return possible object is
-   * {@link JAXBElement }{@code <}{@link ArrayOfstring }{@code >}
-   */
-  public JAXBElement<ArrayOfstring> getText() {
-    return text;
-  }
-
-  /**
-   * Sets the value of the text property.
-   *
-   * @param value allowed object is
-   *              {@link JAXBElement }{@code <}{@link ArrayOfstring }{@code >}
-   */
-  public void setText(JAXBElement<ArrayOfstring> value) {
-    this.text = value;
-  }
+  @XmlElement(name = "AirlineCode", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+  protected String airlineCode;
+  @XmlElement(name = "Code", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+  protected String code;
+  @XmlElement(name = "CompanyShortName", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+  protected String companyShortName;
+  @XmlElement(name = "text", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+  protected ArrayOfstring text;
 
 }

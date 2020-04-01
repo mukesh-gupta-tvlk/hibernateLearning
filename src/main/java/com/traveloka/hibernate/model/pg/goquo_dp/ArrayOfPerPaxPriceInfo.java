@@ -1,4 +1,3 @@
-
 package com.traveloka.hibernate.model.pg.goquo_dp;
 
 import java.util.ArrayList;
@@ -11,9 +10,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for ArrayOfPerPaxPriceInfo complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="ArrayOfPerPaxPriceInfo">
  *   &lt;complexContent>
@@ -25,8 +24,6 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ArrayOfPerPaxPriceInfo", propOrder = {
@@ -34,36 +31,34 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfPerPaxPriceInfo {
 
-    @XmlElement(name = "PerPaxPriceInfo", nillable = true)
-    protected List<PerPaxPriceInfo> perPaxPriceInfo;
+  @XmlElement(name = "PerPaxPriceInfo", nillable = true)
+  protected List<PerPaxPriceInfo> perPaxPriceInfo;
 
-    /**
-     * Gets the value of the perPaxPriceInfo property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the perPaxPriceInfo property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getPerPaxPriceInfo().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link PerPaxPriceInfo }
-     * 
-     * 
-     */
-    public List<PerPaxPriceInfo> getPerPaxPriceInfo() {
-        if (perPaxPriceInfo == null) {
-            perPaxPriceInfo = new ArrayList<PerPaxPriceInfo>();
-        }
-        return this.perPaxPriceInfo;
+  /**
+   * Gets the value of the perPaxPriceInfo property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the perPaxPriceInfo property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getPerPaxPriceInfo().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link PerPaxPriceInfo }
+   */
+  public List<PerPaxPriceInfo> getPerPaxPriceInfo() {
+    if (perPaxPriceInfo == null) {
+      perPaxPriceInfo = new ArrayList<PerPaxPriceInfo>();
     }
+    return this.perPaxPriceInfo;
+  }
 
 }

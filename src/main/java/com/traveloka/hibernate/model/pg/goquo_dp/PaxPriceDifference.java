@@ -1,20 +1,17 @@
-
 package com.traveloka.hibernate.model.pg.goquo_dp;
 
 import java.math.BigDecimal;
-import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
  * <p>Java class for PaxPriceDifference complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="PaxPriceDifference">
  *   &lt;complexContent>
@@ -32,8 +29,6 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "PaxPriceDifference", propOrder = {
@@ -47,187 +42,159 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class PaxPriceDifference {
 
-    @XmlElement(name = "PerAdultFareDiff")
-    protected BigDecimal perAdultFareDiff;
-    @XmlElement(name = "PerAdultTaxDiff")
-    protected BigDecimal perAdultTaxDiff;
-    @XmlElement(name = "PerChildFareDiff")
-    protected BigDecimal perChildFareDiff;
-    @XmlElement(name = "PerChildTaxDiff")
-    protected BigDecimal perChildTaxDiff;
-    @XmlElement(name = "PerInfantFareDiff")
-    protected BigDecimal perInfantFareDiff;
-    @XmlElement(name = "PerInfantTaxDiff")
-    protected BigDecimal perInfantTaxDiff;
-    @XmlElementRef(name = "SplPaxPriceDiff", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-    protected JAXBElement<ArrayOfSpecialPaxPriceDifference> splPaxPriceDiff;
+  @XmlElement(name = "PerAdultFareDiff")
+  protected BigDecimal perAdultFareDiff;
+  @XmlElement(name = "PerAdultTaxDiff")
+  protected BigDecimal perAdultTaxDiff;
+  @XmlElement(name = "PerChildFareDiff")
+  protected BigDecimal perChildFareDiff;
+  @XmlElement(name = "PerChildTaxDiff")
+  protected BigDecimal perChildTaxDiff;
+  @XmlElement(name = "PerInfantFareDiff")
+  protected BigDecimal perInfantFareDiff;
+  @XmlElement(name = "PerInfantTaxDiff")
+  protected BigDecimal perInfantTaxDiff;
+  @XmlElement(name = "SplPaxPriceDiff", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+  protected ArrayOfSpecialPaxPriceDifference splPaxPriceDiff;
 
-    /**
-     * Gets the value of the perAdultFareDiff property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public BigDecimal getPerAdultFareDiff() {
-        return perAdultFareDiff;
-    }
+  /**
+   * Gets the value of the perAdultFareDiff property.
+   *
+   * @return possible object is
+   * {@link BigDecimal }
+   */
+  public BigDecimal getPerAdultFareDiff() {
+    return perAdultFareDiff;
+  }
 
-    /**
-     * Sets the value of the perAdultFareDiff property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public void setPerAdultFareDiff(BigDecimal value) {
-        this.perAdultFareDiff = value;
-    }
+  /**
+   * Sets the value of the perAdultFareDiff property.
+   *
+   * @param value allowed object is
+   *              {@link BigDecimal }
+   */
+  public void setPerAdultFareDiff(BigDecimal value) {
+    this.perAdultFareDiff = value;
+  }
 
-    /**
-     * Gets the value of the perAdultTaxDiff property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public BigDecimal getPerAdultTaxDiff() {
-        return perAdultTaxDiff;
-    }
+  /**
+   * Gets the value of the perAdultTaxDiff property.
+   *
+   * @return possible object is
+   * {@link BigDecimal }
+   */
+  public BigDecimal getPerAdultTaxDiff() {
+    return perAdultTaxDiff;
+  }
 
-    /**
-     * Sets the value of the perAdultTaxDiff property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public void setPerAdultTaxDiff(BigDecimal value) {
-        this.perAdultTaxDiff = value;
-    }
+  /**
+   * Sets the value of the perAdultTaxDiff property.
+   *
+   * @param value allowed object is
+   *              {@link BigDecimal }
+   */
+  public void setPerAdultTaxDiff(BigDecimal value) {
+    this.perAdultTaxDiff = value;
+  }
 
-    /**
-     * Gets the value of the perChildFareDiff property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public BigDecimal getPerChildFareDiff() {
-        return perChildFareDiff;
-    }
+  /**
+   * Gets the value of the perChildFareDiff property.
+   *
+   * @return possible object is
+   * {@link BigDecimal }
+   */
+  public BigDecimal getPerChildFareDiff() {
+    return perChildFareDiff;
+  }
 
-    /**
-     * Sets the value of the perChildFareDiff property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public void setPerChildFareDiff(BigDecimal value) {
-        this.perChildFareDiff = value;
-    }
+  /**
+   * Sets the value of the perChildFareDiff property.
+   *
+   * @param value allowed object is
+   *              {@link BigDecimal }
+   */
+  public void setPerChildFareDiff(BigDecimal value) {
+    this.perChildFareDiff = value;
+  }
 
-    /**
-     * Gets the value of the perChildTaxDiff property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public BigDecimal getPerChildTaxDiff() {
-        return perChildTaxDiff;
-    }
+  /**
+   * Gets the value of the perChildTaxDiff property.
+   *
+   * @return possible object is
+   * {@link BigDecimal }
+   */
+  public BigDecimal getPerChildTaxDiff() {
+    return perChildTaxDiff;
+  }
 
-    /**
-     * Sets the value of the perChildTaxDiff property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public void setPerChildTaxDiff(BigDecimal value) {
-        this.perChildTaxDiff = value;
-    }
+  /**
+   * Sets the value of the perChildTaxDiff property.
+   *
+   * @param value allowed object is
+   *              {@link BigDecimal }
+   */
+  public void setPerChildTaxDiff(BigDecimal value) {
+    this.perChildTaxDiff = value;
+  }
 
-    /**
-     * Gets the value of the perInfantFareDiff property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public BigDecimal getPerInfantFareDiff() {
-        return perInfantFareDiff;
-    }
+  /**
+   * Gets the value of the perInfantFareDiff property.
+   *
+   * @return possible object is
+   * {@link BigDecimal }
+   */
+  public BigDecimal getPerInfantFareDiff() {
+    return perInfantFareDiff;
+  }
 
-    /**
-     * Sets the value of the perInfantFareDiff property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public void setPerInfantFareDiff(BigDecimal value) {
-        this.perInfantFareDiff = value;
-    }
+  /**
+   * Sets the value of the perInfantFareDiff property.
+   *
+   * @param value allowed object is
+   *              {@link BigDecimal }
+   */
+  public void setPerInfantFareDiff(BigDecimal value) {
+    this.perInfantFareDiff = value;
+  }
 
-    /**
-     * Gets the value of the perInfantTaxDiff property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public BigDecimal getPerInfantTaxDiff() {
-        return perInfantTaxDiff;
-    }
+  /**
+   * Gets the value of the perInfantTaxDiff property.
+   *
+   * @return possible object is
+   * {@link BigDecimal }
+   */
+  public BigDecimal getPerInfantTaxDiff() {
+    return perInfantTaxDiff;
+  }
 
-    /**
-     * Sets the value of the perInfantTaxDiff property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public void setPerInfantTaxDiff(BigDecimal value) {
-        this.perInfantTaxDiff = value;
-    }
+  /**
+   * Sets the value of the perInfantTaxDiff property.
+   *
+   * @param value allowed object is
+   *              {@link BigDecimal }
+   */
+  public void setPerInfantTaxDiff(BigDecimal value) {
+    this.perInfantTaxDiff = value;
+  }
 
-    /**
-     * Gets the value of the splPaxPriceDiff property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link ArrayOfSpecialPaxPriceDifference }{@code >}
-     *     
-     */
-    public JAXBElement<ArrayOfSpecialPaxPriceDifference> getSplPaxPriceDiff() {
-        return splPaxPriceDiff;
-    }
+  /**
+   * Gets the value of the splPaxPriceDiff property.
+   *
+   * @return possible object is
+   * {@link ArrayOfSpecialPaxPriceDifference }{@code <}{@link ArrayOfSpecialPaxPriceDifference }{@code >}
+   */
+  public ArrayOfSpecialPaxPriceDifference getSplPaxPriceDiff() {
+    return splPaxPriceDiff;
+  }
 
-    /**
-     * Sets the value of the splPaxPriceDiff property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link ArrayOfSpecialPaxPriceDifference }{@code >}
-     *     
-     */
-    public void setSplPaxPriceDiff(JAXBElement<ArrayOfSpecialPaxPriceDifference> value) {
-        this.splPaxPriceDiff = value;
-    }
+  /**
+   * Sets the value of the splPaxPriceDiff property.
+   *
+   * @param value allowed object is
+   *              {@link ArrayOfSpecialPaxPriceDifference }{@code <}{@link ArrayOfSpecialPaxPriceDifference }{@code >}
+   */
+  public void setSplPaxPriceDiff(ArrayOfSpecialPaxPriceDifference value) {
+    this.splPaxPriceDiff = value;
+  }
 
 }

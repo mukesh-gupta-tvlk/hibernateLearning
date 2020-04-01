@@ -1,4 +1,3 @@
-
 package com.traveloka.hibernate.model.pg.goquo_dp;
 
 import java.util.ArrayList;
@@ -11,9 +10,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for ArrayOfBaggages complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="ArrayOfBaggages">
  *   &lt;complexContent>
@@ -25,8 +24,6 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ArrayOfBaggages", propOrder = {
@@ -34,36 +31,34 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfBaggages {
 
-    @XmlElement(name = "Baggages", nillable = true)
-    protected List<Baggages> baggages;
+  @XmlElement(name = "Baggages", nillable = true)
+  protected List<Baggages> baggages;
 
-    /**
-     * Gets the value of the baggages property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the baggages property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getBaggages().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Baggages }
-     * 
-     * 
-     */
-    public List<Baggages> getBaggages() {
-        if (baggages == null) {
-            baggages = new ArrayList<Baggages>();
-        }
-        return this.baggages;
+  /**
+   * Gets the value of the baggages property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the baggages property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getBaggages().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link Baggages }
+   */
+  public List<Baggages> getBaggages() {
+    if (baggages == null) {
+      baggages = new ArrayList<Baggages>();
     }
+    return this.baggages;
+  }
 
 }

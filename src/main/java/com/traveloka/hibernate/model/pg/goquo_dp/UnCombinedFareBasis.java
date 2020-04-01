@@ -1,11 +1,11 @@
 package com.traveloka.hibernate.model.pg.goquo_dp;
 
 import com.traveloka.hibernate.model.pg.serialization.arrays.ArrayOfstring;
+import lombok.Data;
 
-import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElementRef;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -29,6 +29,8 @@ import javax.xml.bind.annotation.XmlType;
  * &lt;/complexType>
  * </pre>
  */
+
+@Data
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "UnCombinedFareBasis", propOrder = {
     "combinationalFareGroups",
@@ -38,93 +40,13 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class UnCombinedFareBasis {
 
-  @XmlElementRef(name = "CombinationalFareGroups", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-  protected JAXBElement<ArrayOfstring> combinationalFareGroups;
-  @XmlElementRef(name = "CombineFareBasisCode", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-  protected JAXBElement<String> combineFareBasisCode;
-  @XmlElementRef(name = "FareBasisCode", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-  protected JAXBElement<String> fareBasisCode;
-  @XmlElementRef(name = "PrimeFareBasisCode", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", type = JAXBElement.class, required = false)
-  protected JAXBElement<String> primeFareBasisCode;
-
-  /**
-   * Gets the value of the combinationalFareGroups property.
-   *
-   * @return possible object is
-   * {@link JAXBElement }{@code <}{@link ArrayOfstring }{@code >}
-   */
-  public JAXBElement<ArrayOfstring> getCombinationalFareGroups() {
-    return combinationalFareGroups;
-  }
-
-  /**
-   * Sets the value of the combinationalFareGroups property.
-   *
-   * @param value allowed object is
-   *              {@link JAXBElement }{@code <}{@link ArrayOfstring }{@code >}
-   */
-  public void setCombinationalFareGroups(JAXBElement<ArrayOfstring> value) {
-    this.combinationalFareGroups = value;
-  }
-
-  /**
-   * Gets the value of the combineFareBasisCode property.
-   *
-   * @return possible object is
-   * {@link JAXBElement }{@code <}{@link String }{@code >}
-   */
-  public JAXBElement<String> getCombineFareBasisCode() {
-    return combineFareBasisCode;
-  }
-
-  /**
-   * Sets the value of the combineFareBasisCode property.
-   *
-   * @param value allowed object is
-   *              {@link JAXBElement }{@code <}{@link String }{@code >}
-   */
-  public void setCombineFareBasisCode(JAXBElement<String> value) {
-    this.combineFareBasisCode = value;
-  }
-
-  /**
-   * Gets the value of the fareBasisCode property.
-   *
-   * @return possible object is
-   * {@link JAXBElement }{@code <}{@link String }{@code >}
-   */
-  public JAXBElement<String> getFareBasisCode() {
-    return fareBasisCode;
-  }
-
-  /**
-   * Sets the value of the fareBasisCode property.
-   *
-   * @param value allowed object is
-   *              {@link JAXBElement }{@code <}{@link String }{@code >}
-   */
-  public void setFareBasisCode(JAXBElement<String> value) {
-    this.fareBasisCode = value;
-  }
-
-  /**
-   * Gets the value of the primeFareBasisCode property.
-   *
-   * @return possible object is
-   * {@link JAXBElement }{@code <}{@link String }{@code >}
-   */
-  public JAXBElement<String> getPrimeFareBasisCode() {
-    return primeFareBasisCode;
-  }
-
-  /**
-   * Sets the value of the primeFareBasisCode property.
-   *
-   * @param value allowed object is
-   *              {@link JAXBElement }{@code <}{@link String }{@code >}
-   */
-  public void setPrimeFareBasisCode(JAXBElement<String> value) {
-    this.primeFareBasisCode = value;
-  }
+  @XmlElement(name = "CombinationalFareGroups", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+  protected ArrayOfstring combinationalFareGroups;
+  @XmlElement(name = "CombineFareBasisCode", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+  protected String combineFareBasisCode;
+  @XmlElement(name = "FareBasisCode", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+  protected String fareBasisCode;
+  @XmlElement(name = "PrimeFareBasisCode", namespace = "http://schemas.datacontract.org/2004/07/GoQuo.DP.BAL", required = false)
+  protected String primeFareBasisCode;
 
 }

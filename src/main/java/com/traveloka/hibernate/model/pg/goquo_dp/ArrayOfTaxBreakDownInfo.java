@@ -1,4 +1,3 @@
-
 package com.traveloka.hibernate.model.pg.goquo_dp;
 
 import java.util.ArrayList;
@@ -11,9 +10,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for ArrayOfTaxBreakDownInfo complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="ArrayOfTaxBreakDownInfo">
  *   &lt;complexContent>
@@ -25,8 +24,6 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ArrayOfTaxBreakDownInfo", propOrder = {
@@ -34,36 +31,34 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ArrayOfTaxBreakDownInfo {
 
-    @XmlElement(name = "TaxBreakDownInfo", nillable = true)
-    protected List<TaxBreakDownInfo> taxBreakDownInfo;
+  @XmlElement(name = "TaxBreakDownInfo", nillable = true)
+  protected List<TaxBreakDownInfo> taxBreakDownInfo;
 
-    /**
-     * Gets the value of the taxBreakDownInfo property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the taxBreakDownInfo property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getTaxBreakDownInfo().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link TaxBreakDownInfo }
-     * 
-     * 
-     */
-    public List<TaxBreakDownInfo> getTaxBreakDownInfo() {
-        if (taxBreakDownInfo == null) {
-            taxBreakDownInfo = new ArrayList<TaxBreakDownInfo>();
-        }
-        return this.taxBreakDownInfo;
+  /**
+   * Gets the value of the taxBreakDownInfo property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the taxBreakDownInfo property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getTaxBreakDownInfo().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link TaxBreakDownInfo }
+   */
+  public List<TaxBreakDownInfo> getTaxBreakDownInfo() {
+    if (taxBreakDownInfo == null) {
+      taxBreakDownInfo = new ArrayList<TaxBreakDownInfo>();
     }
+    return this.taxBreakDownInfo;
+  }
 
 }
